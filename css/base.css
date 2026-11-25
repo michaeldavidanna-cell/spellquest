@@ -1566,6 +1566,393 @@ button:disabled {
   100% { transform: translate(var(--dx), var(--dy)) scale(0.4) rotate(240deg); opacity: 0; }
 }
 
+/* ==========================================================================
+   Original Per-Theme Celebration System (60fps transform/opacity only, <1.5s)
+   ========================================================================== */
+.cel-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 460;
+  animation: cel-fade 1.15s ease-out forwards;
+}
+
+.cel-tier--1 { animation-duration: 1.25s; }
+.cel-tier--2 { animation-duration: 1.35s; }
+.cel-tier--3,
+.cel-levelup { animation-duration: 1.46s; }
+
+@keyframes cel-fade {
+  0% { opacity: 0; }
+  12% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.cel-rays {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(246, 201, 94, 0.28) 0deg 14deg,
+    transparent 14deg 30deg
+  );
+  animation: cel-spin 1.45s linear forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes cel-spin {
+  0% { transform: scale(0.4) rotate(0deg); opacity: 0; }
+  25% { transform: scale(1.05) rotate(25deg); opacity: 0.95; }
+  100% { transform: scale(1.25) rotate(75deg); opacity: 0; }
+}
+
+.cel-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 26px;
+  background: var(--surface);
+  border: 2.5px solid var(--gold);
+  box-shadow: var(--shadow-float);
+  animation: cel-pop 1.25s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.cel-tier--1 .cel-card { transform: scale(1.04); }
+.cel-tier--2 .cel-card { border-width: 3px; }
+.cel-tier--3 .cel-card,
+.cel-card--levelup {
+  border-width: 3.5px;
+  padding: 18px 26px;
+}
+
+@keyframes cel-pop {
+  0% { transform: translateY(22px) scale(0.76); opacity: 0; }
+  22% { transform: translateY(-4px) scale(1.04); opacity: 1; }
+  36% { transform: translateY(0) scale(1); opacity: 1; }
+  84% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-10px) scale(0.95); opacity: 0; }
+}
+
+.cel-combo-pill {
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--gold);
+  color: #1c1917;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  animation: cel-badge-bounce 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes cel-badge-bounce {
+  0% { transform: scale(0.5); }
+  70% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+.cel-level-num {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.cel-stage {
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cel-caption {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  text-align: center;
+}
+
+.cel-sparks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Pinehook Lake: fish leaps in arc + splashes + reels toward dock */
+.cel-fish {
+  transform-origin: 140px 66px;
+  animation: cel-fish-leap 1.1s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-fish-leap {
+  0% { transform: translate(34px, 34px) rotate(-32deg) scale(0.8); opacity: 0; }
+  28% { transform: translate(4px, -24px) rotate(-14deg) scale(1.08); opacity: 1; }
+  58% { transform: translate(-22px, -16px) rotate(12deg) scale(1.02); opacity: 1; }
+  100% { transform: translate(-52px, 6px) rotate(24deg) scale(0.94); opacity: 0.95; }
+}
+
+.cel-splash {
+  transform-origin: 144px 86px;
+  animation: cel-splash-pop 0.95s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-splash-pop {
+  0% { transform: scale(0.3); opacity: 0; }
+  22% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1.45); opacity: 0; }
+}
+
+/* Ridgecrest Trails: mountain biker launches jump + dust + sticks landing */
+.cel-rider {
+  transform-origin: 130px 66px;
+  animation: cel-rider-jump 1.1s cubic-bezier(0.22, 0.85, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-rider-jump {
+  0% { transform: translate(-66px, 28px) rotate(-16deg); opacity: 0; }
+  20% { transform: translate(-28px, -4px) rotate(-18deg); opacity: 1; }
+  52% { transform: translate(12px, -28px) rotate(-4deg); opacity: 1; }
+  84% { transform: translate(56px, 22px) rotate(10deg); opacity: 1; }
+  100% { transform: translate(74px, 26px) rotate(2deg); opacity: 1; }
+}
+
+.cel-dust {
+  transform-origin: 96px 98px;
+  animation: cel-dust-puff 0.9s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-dust-puff {
+  0% { transform: scale(0.3) translate(0, 0); opacity: 0; }
+  26% { transform: scale(1.05) translate(-8px, -6px); opacity: 0.95; }
+  100% { transform: scale(1.45) translate(-22px, -14px); opacity: 0; }
+}
+
+.cel-land-burst {
+  transform-origin: 196px 102px;
+  animation: cel-land-pop 1.1s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-land-pop {
+  0%, 72% { transform: scale(0.2); opacity: 0; }
+  86% { transform: scale(1.18); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* Starquill Academy: lanterns light up & rune glows */
+.cel-lantern {
+  transform-origin: center;
+  animation: cel-lantern-rise 1.05s ease-out forwards;
+  will-change: transform, opacity;
+}
+.cel-lantern--2 { animation-delay: 0.08s; }
+.cel-lantern--3 { animation-delay: 0.14s; }
+@keyframes cel-lantern-rise {
+  0% { transform: translateY(18px) scale(0.75); opacity: 0; }
+  45% { transform: translateY(-4px) scale(1.08); opacity: 1; }
+  100% { transform: translateY(-8px) scale(1); opacity: 1; }
+}
+
+.cel-rune {
+  transform-origin: 130px 70px;
+  animation: cel-rune-glow 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-rune-glow {
+  0% { transform: scale(0.4) rotate(-25deg); opacity: 0; }
+  50% { transform: scale(1.1) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.cel-rune-aura,
+.cel-stars {
+  transform-origin: 130px 68px;
+  animation: cel-aura-pulse 1.1s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-aura-pulse {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1.25); opacity: 0.4; }
+}
+
+/* SkyDrop Ridge: Cloud Glider swoops through sky rings & Sky Beacon flares */
+.cel-glider {
+  transform-origin: 90px 60px;
+  animation: cel-glider-swoop 1.1s cubic-bezier(0.22, 0.85, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-glider-swoop {
+  0% { transform: translate(-72px, -24px) rotate(12deg) scale(0.8); opacity: 0; }
+  25% { transform: translate(-10px, -4px) rotate(4deg) scale(1); opacity: 1; }
+  65% { transform: translate(54px, -12px) rotate(-6deg) scale(1.06); opacity: 1; }
+  100% { transform: translate(96px, -22px) rotate(-10deg) scale(0.95); opacity: 0.95; }
+}
+
+.cel-ring {
+  transform-origin: center;
+  animation: cel-ring-pulse 1.05s ease-out forwards;
+  will-change: transform, opacity;
+}
+.cel-ring--2 { animation-delay: 0.18s; }
+@keyframes cel-ring-pulse {
+  0% { transform: scale(0.85); opacity: 0.5; }
+  50% { transform: scale(1.16); opacity: 1; }
+  100% { transform: scale(1.02); opacity: 0.85; }
+}
+
+.cel-beacon-flare {
+  transform-origin: 205px 96px;
+  animation: cel-beacon-up 1.1s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes cel-beacon-up {
+  0%, 35% { transform: scaleY(0.15); opacity: 0; }
+  70% { transform: scaleY(1.08); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0.85; }
+}
+
+/* Session-Complete Trophy Screen & Collected Items Shelf */
+.trophy-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 26px 22px;
+}
+
+.trophy-emblem {
+  line-height: 0;
+  animation: trophy-float 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+@keyframes trophy-float {
+  0% { transform: scale(0.6) translateY(16px); opacity: 0; }
+  65% { transform: scale(1.08) translateY(-4px); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.trophy-level-banner {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+.trophy-shelf {
+  width: 100%;
+  max-width: 680px;
+  padding: 14px;
+  border-radius: 20px;
+  background: var(--surface-alt);
+  border: 1.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trophy-shelf__label {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+}
+
+.trophy-shelf__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.collectible-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  font-size: 14px;
+  font-weight: 800;
+  animation: chip-pop 0.38s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation-delay: var(--stagger, 0ms);
+  will-change: transform, opacity;
+}
+
+.collectible-chip__icon {
+  font-size: 19px;
+  line-height: 1;
+}
+
+@keyframes chip-pop {
+  0% { transform: scale(0.55); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Phonics Level Badge & Visual Choices for Libby (5yo) */
+.phonics-level-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.phonics-word-choice {
+  min-height: clamp(86px, 14dvh, 132px);
+  padding: 12px 16px;
+  border-radius: 24px;
+  background: var(--key-bg);
+  border: 3px solid var(--key-edge);
+  box-shadow: 0 6px 0 var(--key-edge);
+  color: var(--key-ink);
+  font-size: clamp(28px, 4.4vw, 44px);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.phonics-word-choice:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 var(--key-edge);
+}
+
+.phonics-word-choice.is-hint {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--gold) 35%, transparent), 0 6px 0 var(--gold);
+}
+
+.phonics-rhyme-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  background: var(--gold-soft);
+  border: 2px solid var(--gold);
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+/* Reduced motion: calm static display */
+.cel-reduced,
+.cel-reduced * {
+  animation: none !important;
+}
+
 .noscript-notice {
   padding: 24px;
   text-align: center;

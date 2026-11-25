@@ -34,6 +34,7 @@ import {
 import { ps5Steps } from '../rewards/economy.js';
 import { readiness, topMistakes } from '../engine/runner.js';
 import { importBackup, lastBackupAt, prepareBackup, shareBackup } from '../store/backup.js';
+import { audioStatus, clearAudio, downloadAllAudio } from '../audio/clips.js';
 import { speech } from '../audio/speech.js';
 import {
   closeModal,
@@ -52,6 +53,7 @@ export function ParentScreen({ router, app }) {
       let unlockedPin = null;
       let activeTab = 'approvals'; // 'approvals' | 'kids' | 'lists' | 'progress' | 'system'
       let preparedBackup = null;
+      let audioAbort = null;
 
       const section = el('section', { class: 'screen screen--scroll is-active', dataset: { screen: 'parent' } });
       const wrap = el('div', { class: 'page-wrap' });
@@ -886,6 +888,135 @@ export function ParentScreen({ router, app }) {
             )
           );
 
+          // Offline Audio Download Card (wired to audio/clips.js downloadAllAudio / audioStatus / clearAudio)
+          const audioStatusLine = el('p', { class: 'muted', style: 'margin:0 0 10px;font-size:14px;' }, 'Checking bundled natural-voice audio…');
+          const audioMeterWrap = el('div', { class: 'meter', style: 'margin-bottom:12px;', hidden: true });
+          const audioMeterFill = el('div', { class: 'meter__fill', style: 'width:0%' });
+          audioMeterWrap.append(audioMeterFill);
+
+          let dlBtn;
+          let cancelDlBtn;
+          let clearDlBtn;
+
+          const refreshAudioStatus = async () => {
+            try {
+              const st = await audioStatus();
+              if (!alive || activeTab !== 'system') return;
+              if (!st.total) {
+                audioStatusLine.textContent = '0 of 0 clips saved on this iPad — device speech is active until audio clips are published.';
+                if (dlBtn) {
+                  dlBtn.disabled = true;
+                  dlBtn.textContent = '📥 Download all audio for offline';
+                }
+                if (clearDlBtn) clearDlBtn.hidden = true;
+                audioMeterWrap.hidden = true;
+              } else {
+                const pct = Math.round((st.cached / st.total) * 100);
+                audioStatusLine.textContent =
+                  st.cached >= st.total
+                    ? `${st.cached} of ${st.total} clips saved on this iPad — ready for offline & airplane mode!`
+                    : `${st.cached} of ${st.total} clips saved on this iPad (${pct}%). Connect to Wi-Fi before downloading (several MB).`;
+                audioMeterWrap.hidden = false;
+                audioMeterFill.style.width = `${Math.max(st.cached > 0 ? 4 : 0, pct)}%`;
+                if (dlBtn) {
+                  dlBtn.disabled = st.cached >= st.total;
+                  dlBtn.textContent = st.cached >= st.total ? '✓ All audio saved offline' : '📥 Download all audio for offline';
+                }
+                if (clearDlBtn) clearDlBtn.hidden = st.cached === 0;
+              }
+            } catch {
+              if (alive && activeTab === 'system') {
+                audioStatusLine.textContent = 'Offline audio storage is unavailable in this browser mode.';
+              }
+            }
+          };
+
+          wrap.append(
+            el(
+              'div',
+              { class: 'card' },
+              el('h3', { class: 'h3', style: 'margin-bottom:6px;' }, 'Offline Audio (Natural Voice)'),
+              audioStatusLine,
+              audioMeterWrap,
+              el(
+                'div',
+                { style: 'display:flex;flex-wrap:wrap;gap:10px;' },
+                (dlBtn = el(
+                  'button',
+                  {
+                    type: 'button',
+                    class: 'btn btn--primary btn--sm',
+                    onClick: async () => {
+                      if (audioAbort) return;
+                      audioAbort = new AbortController();
+                      dlBtn.disabled = true;
+                      dlBtn.textContent = 'Downloading…';
+                      cancelDlBtn.hidden = false;
+                      audioMeterWrap.hidden = false;
+                      try {
+                        const res = await downloadAllAudio({
+                          signal: audioAbort.signal,
+                          onProgress: ({ done, total, failed }) => {
+                            if (!alive || activeTab !== 'system') return;
+                            const pct = total ? Math.round((done / total) * 100) : 0;
+                            audioMeterFill.style.width = `${Math.max(4, pct)}%`;
+                            audioStatusLine.textContent = `Downloading on Wi-Fi: ${done} of ${total} clips saved on this iPad (${pct}%)${failed ? ` • ${failed} failed` : ''}`;
+                          },
+                        });
+                        if (!alive) return;
+                        if (res.ok) {
+                          showToast(`All ${res.done} clips saved on this iPad!`, { tone: 'gold' });
+                        } else if (res.aborted) {
+                          showToast('Download cancelled — tap Download again anytime to resume.');
+                        } else if (res.reason === 'storage-full') {
+                          showToast('This iPad is out of storage space for more audio clips.');
+                        } else if (res.reason === 'no-cache-storage') {
+                          showToast('Offline audio storage is not available in this browser.');
+                        } else if (res.reason === 'no-audio') {
+                          showToast('No recorded audio clips are available yet.');
+                        } else {
+                          showToast(`Saved ${res.done} of ${res.total} clips (${res.failed} could not download).`);
+                        }
+                      } finally {
+                        audioAbort = null;
+                        if (cancelDlBtn) cancelDlBtn.hidden = true;
+                        if (alive && activeTab === 'system') refreshAudioStatus();
+                      }
+                    },
+                  },
+                  '📥 Download all audio for offline'
+                )),
+                (cancelDlBtn = el(
+                  'button',
+                  {
+                    type: 'button',
+                    class: 'btn btn--ghost btn--sm',
+                    hidden: true,
+                    onClick: () => {
+                      audioAbort?.abort();
+                    },
+                  },
+                  'Cancel'
+                )),
+                (clearDlBtn = el(
+                  'button',
+                  {
+                    type: 'button',
+                    class: 'btn btn--ghost btn--sm',
+                    hidden: true,
+                    onClick: async () => {
+                      await clearAudio();
+                      showToast('Cleared downloaded audio clips.');
+                      refreshAudioStatus();
+                    },
+                  },
+                  'Clear Audio Cache'
+                ))
+              )
+            )
+          );
+          refreshAudioStatus();
+
           const daysAgo = backupTs ? Math.floor((Date.now() - backupTs) / 86_400_000) : null;
           let backupMode = 'merge';
           const restoreInput = el('input', {
@@ -1030,6 +1161,10 @@ export function ParentScreen({ router, app }) {
       return () => {
         alive = false;
         unlockedPin = null;
+        if (audioAbort) {
+          audioAbort.abort();
+          audioAbort = null;
+        }
         if (offLocked) offLocked();
         lockParent('manual');
         closeModal();

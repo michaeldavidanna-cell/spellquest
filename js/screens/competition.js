@@ -10,21 +10,24 @@
  */
 
 import { getProfile } from '../store/profiles.js';
-import { getRewardSettings } from '../rewards/wallet.js';
+import { getRewardSettings, getWallet } from '../rewards/wallet.js';
 import { startSession } from '../engine/runner.js';
-import { hasClue } from '../engine/wordlist.js';
+import { hasSafeClue as hasClue, clueText, safeCaption } from '../engine/clues.js'; // A1: leak-safe clue text
 import { speech } from '../audio/speech.js';
 import {
-  celebrateBurst,
   el,
   formatSeconds,
-  maskWordInText,
   renderLetterDiff,
   renderLetterSlots,
   renderPlayHud,
   showToast,
   speakerSvg,
 } from '../ui/components.js';
+import {
+  playLevelUpBurst,
+  playThemeCelebration,
+  renderTrophySummaryCard,
+} from '../ui/celebrations.js';
 import { createKeyboard } from '../ui/keyboard.js';
 import { applyTheme, getAvatarEmoji, getTheme, pickRandom, renderThemeSceneSvg } from '../ui/themes.js';
 
@@ -37,17 +40,18 @@ const OFFICIAL_ASKS = [
 ];
 
 function formatOfficialClue(word, kind) {
+  // A1: all clue text comes from engine/clues.js, which never shows the spelling.
   switch (kind) {
     case 'definition':
-      return { tag: 'Judge • Definition', text: maskWordInText(word.definitions?.[0] || '', word.word) };
+      return { tag: 'Judge • Definition', text: clueText(word, 'definition') };
     case 'sentence':
-      return { tag: 'Judge • Sentence', text: maskWordInText(word.sentence || '', word.word) };
+      return { tag: 'Judge • Sentence', text: clueText(word, 'sentence') };
     case 'partOfSpeech':
-      return { tag: 'Judge • Part of Speech', text: word.partOfSpeech || '' };
+      return { tag: 'Judge • Part of Speech', text: clueText(word, 'partOfSpeech') };
     case 'origin':
-      return { tag: 'Judge • Language of Origin', text: word.origin || '' };
+      return { tag: 'Judge • Language of Origin', text: clueText(word, 'origin') };
     case 'altPronunciation':
-      return { tag: 'Judge • Another Pronunciation', text: word.altPronunciation || '' };
+      return { tag: 'Judge • Another Pronunciation', text: clueText(word, 'altPronunciation') };
     default:
       return {
         tag: 'Pronouncer',
@@ -87,15 +91,17 @@ export function CompetitionScreen({ router, app }) {
       };
 
       const boot = async () => {
-        const [profile, rewardSettings] = await Promise.all([
+        const [profile, rewardSettings, initialWallet] = await Promise.all([
           getProfile(profileId),
           getRewardSettings().catch(() => ({ rewardName: 'PS5', minutesPerToken: 5 })),
+          getWallet(profileId).catch(() => ({ level: 1 })),
         ]);
         if (!alive) return;
         if (!profile) {
           router.go('#/kids', { replace: true });
           return;
         }
+        const startLevel = initialWallet?.level || 1;
         const rewardName = rewardSettings?.rewardName || 'PS5';
         const theme = app?.setTheme ? (app.setTheme(profile.theme), getTheme(profile.theme)) : applyTheme(profile.theme);
         session = await startSession(profile.id, {
@@ -134,6 +140,8 @@ export function CompetitionScreen({ router, app }) {
         let activeClue = null;
         let timeUp = false;
         let roundOutcomes = [];
+        let streakInRound = 0;
+        let bestStreak = 0;
         let speakHeroBtn = null;
         let speechRecoveryBtn = null;
         let timerPill = null;
@@ -210,45 +218,37 @@ export function CompetitionScreen({ router, app }) {
           }
           const summary = await session.finish();
           finished = true;
+          const afterWallet = await getWallet(profile.id).catch(() => ({ level: startLevel }));
           if (!alive) return;
 
-          celebrateBurst({ style: profile.equipped?.fx || 'default' });
+          const newLevel = afterWallet?.level || startLevel;
+          const leveledUp = newLevel > startLevel;
+          if (leveledUp) {
+            playLevelUpBurst({ level: newLevel, themeId: theme.id });
+          } else {
+            playThemeCelebration({
+              themeId: theme.id,
+              streak: Math.max(bestStreak, summary.correct >= 3 ? 3 : 1),
+              fxStyle: profile.equipped?.fx || 'default',
+            });
+          }
+
           section.className = 'screen screen--scroll is-active';
           section.innerHTML = '';
 
           const wrap = el('div', { class: 'page-wrap' });
           wrap.append(
-            el(
-              'div',
-              { class: 'card card--stage', style: 'text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;padding:28px 22px;' },
-              el('span', { class: 'pill pill--gold' }, '🎤 ON STAGE RUN COMPLETE'),
-              el('h1', { class: 'h1' }, `${summary.correct} of ${summary.answered} Correct!`),
-              el(
-                'p',
-                { class: 'muted', style: 'margin:0;font-size:18px;font-weight:700;' },
-                `Stage Accuracy: ${Math.round((summary.accuracy || 0) * 100)}% • Streak: ${summary.streak ?? profile.streak?.count ?? 0} days`
-              ),
-              el(
-                'div',
-                { style: 'display:flex;flex-wrap:wrap;justify-content:center;gap:10px;' },
-                el('span', { class: 'pill pill--accent' }, `+${summary.xp ?? 0} XP`),
-                el('span', { class: 'pill pill--gold' }, `+${summary.coins ?? 0} 🪙 Coins`),
-                summary.tokens > 0
-                  ? el(
-                      'span',
-                      { class: 'pill pill--success' },
-                      `+${summary.tokens} token${summary.tokens === 1 ? '' : 's'} (${summary.minutesEarned ?? 0} ${summary.rewardName || rewardName} min!)`
-                    )
-                  : summary.tokenCapped
-                    ? el('span', { class: 'pill' }, 'Daily token cap reached — great bee prep!')
-                    : null
-              ),
-              summary.newlyMastered?.length
-                ? el('div', { class: 'pill pill--success' }, `Mastered: ${summary.newlyMastered.join(', ')}`)
-                : null,
-              el(
-                'div',
-                { style: 'display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:8px;' },
+            renderTrophySummaryCard({
+              themeId: theme.id,
+              title: `${summary.correct} of ${summary.answered} Correct!`,
+              subtitle: `Stage Accuracy: ${Math.round((summary.accuracy || 0) * 100)}% • Streak: ${summary.streak ?? profile.streak?.count ?? 0} days`,
+              summary,
+              rewardName,
+              bestStreak,
+              leveledUp,
+              newLevel,
+              stageStyle: true,
+              actions: [
                 el(
                   'button',
                   {
@@ -268,9 +268,9 @@ export function CompetitionScreen({ router, app }) {
                       },
                       `🛠️ Review ${summary.fixitLeft} Tricky Words`
                     )
-                  : null
-              )
-            )
+                  : null,
+              ],
+            })
           );
           section.append(wrap);
         };
@@ -306,9 +306,17 @@ export function CompetitionScreen({ router, app }) {
           roundOutcomes[session.index] = result.correct;
 
           if (result.correct) {
-            celebrateBurst({ style: profile.equipped?.fx || 'default' });
+            streakInRound += 1;
+            bestStreak = Math.max(bestStreak, streakInRound);
+            playThemeCelebration({
+              themeId: theme.id,
+              streak: streakInRound,
+              fxStyle: profile.equipped?.fx || 'default',
+              label: 'Correct!',
+            });
             speech.say('Correct!', { rate: 1.0 });
           } else {
+            streakInRound = 0;
             speech.sayWordSpelled(word);
           }
           renderWord();
@@ -395,6 +403,7 @@ export function CompetitionScreen({ router, app }) {
           // Left column: Pronouncer & Official 6 Asks (T2 §4)
           const audioPanel = el('div', { class: 'card card--stage audio-panel' });
 
+          const hasNaturalClip = typeof speech.hasClip === 'function' && speech.hasClip(word, 'word');
           speakHeroBtn = el(
             'button',
             {
@@ -407,7 +416,7 @@ export function CompetitionScreen({ router, app }) {
               'span',
               { class: 'speak-hero__text' },
               el('strong', {}, 'Say the Word Again'),
-              el('small', {}, 'Official Pronouncer')
+              el('small', {}, hasNaturalClip ? '🎙️ Natural voice • Official Pronouncer' : 'Official Pronouncer')
             )
           );
 
@@ -447,7 +456,7 @@ export function CompetitionScreen({ router, app }) {
             'div',
             { class: 'clue-box' },
             el('span', { class: 'clue-box__label' }, caption.tag),
-            el('p', { class: 'clue-box__text' }, caption.text)
+            el('p', { class: 'clue-box__text' }, caption.text || safeCaption('Listen closely and ask for clues above.', word))
           );
 
           audioPanel.append(

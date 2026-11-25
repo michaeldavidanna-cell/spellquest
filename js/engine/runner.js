@@ -7,7 +7,8 @@ import { wordsForProfile, beeDateForProfile } from '../store/wordlists.js';
 import { applyEarnings, getLedger, getRewardSettings } from '../rewards/wallet.js';
 import { updateStreak } from '../rewards/economy.js';
 import { Session, buildQueue, readiness as readinessPure, topMistakes as topMistakesPure } from './session.js';
-import { PhonicsSession, buildPhonicsRounds } from './phonics.js';
+import { PhonicsSession, buildPhonicsRounds, buildLadderRounds, ladderStatus, LEGACY_TYPES, PHONICS_TYPES } from './phonics.js';
+import { loadPhonicsLadder } from '../store/phonics.js';
 
 async function loadProgress(profileId) {
   const rows = await db.getAllBy('progress', 'byProfile', profileId);
@@ -154,14 +155,23 @@ export async function startSession(profileId, { kind, size } = {}) {
   return api;
 }
 
-export async function startPhonics(profileId, { rounds } = {}) {
+/**
+ * @param {string} profileId
+ * @param {{rounds?:number, types?:string[]}} opts types = round types the screen can show
+ *   (default: the B2 types find-letter, first-sound, build). Add 'choose' and 'build-phrase'
+ *   to unlock rhyming, sight-word recognition and phrase levels.
+ */
+export async function startPhonics(profileId, { rounds, types = LEGACY_TYPES } = {}) {
   const profile = await getProfile(profileId);
   if (!profile) throw new Error('Profile not found');
-  const [progress, ledger, settings] = await Promise.all([loadProgress(profileId), getLedger(profileId), getRewardSettings()]);
+  const [progress, ledger, settings, ladder] = await Promise.all([
+    loadProgress(profileId), getLedger(profileId), getRewardSettings(), loadPhonicsLadder()]);
   const n = rounds ?? profile.settings.sessionSize ?? 5;
+  const okTypes = types.filter((t) => PHONICS_TYPES.includes(t));
+  const built = ladder ? buildLadderRounds({ ladder, rounds: n, progress, types: okTypes }) : [];
   const inner = new PhonicsSession({
-    id: newId('phon'), profileId, rounds: buildPhonicsRounds({ rounds: n, progress }), progress,
-    rewardSettings: settings, ledger,
+    id: newId('phon'), profileId, rounds: built.length ? built : buildPhonicsRounds({ rounds: n, progress }), progress,
+    rewardSettings: settings, ledger, ladder: built.length ? ladder : null, types: okTypes,
   });
   inner.startedAt = Date.now();
   const persistAnswer = async (result, key) => {
@@ -176,7 +186,17 @@ export async function startPhonics(profileId, { rounds } = {}) {
     if (!result.partial) api.persist(result, key);
     return result;
   };
+  api.ladder = inner.ladderBefore; // { levels:[...], current, currentIndex, allMastered } or null
+  const curLevel = api.ladder?.levels.find((l) => l.id === api.ladder.current);
+  api.level = curLevel ? curLevel.index + 1 : null;      // 1-based ladder level
+  api.levelName = curLevel ? curLevel.title : null;
   return api;
+}
+
+/** Ladder progress for a phonics profile (parent view / level map). Null if the ladder file is missing. */
+export async function phonicsLadder(profileId, { types = LEGACY_TYPES } = {}) {
+  const [ladder, progress] = await Promise.all([loadPhonicsLadder(), loadProgress(profileId)]);
+  return ladder ? ladderStatus(ladder, progress, { types }) : null;
 }
 
 export async function fixitCount(profileId) {

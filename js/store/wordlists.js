@@ -1,7 +1,7 @@
 // Word lists: built-in JSON files under app/data/wordlists/ plus lists a parent imports.
 import { db } from './db.js';
 import { events } from './events.js';
-import { normalizeWordList, mergeWords, beeDateFor } from '../engine/wordlist.js';
+import { normalizeWordList, mergeWords, beeDateFor, defaultListIds } from '../engine/wordlist.js';
 import { localDay } from '../engine/time.js';
 
 const BASE = new URL('../../data/wordlists/', import.meta.url);
@@ -47,12 +47,18 @@ export function getWordLists() {
   return lists;
 }
 
+/** The list ids a profile studies: the parent's choice, else the default for its mode (R4). */
+export function listIdsForProfile(profile) {
+  const chosen = (profile?.wordListIds ?? []).filter((id) => lists.some((l) => l.id === id));
+  return chosen.length ? chosen : defaultListIds(lists, profile?.mode);
+}
+
 export function wordsForProfile(profile) {
-  return mergeWords(lists, profile?.wordListIds ?? []);
+  return mergeWords(lists, listIdsForProfile(profile));
 }
 
 export function beeDateForProfile(profile, now = Date.now()) {
-  return profile?.settings?.beeDate || beeDateFor(lists, profile?.wordListIds ?? [], localDay(now));
+  return profile?.settings?.beeDate || beeDateFor(lists, listIdsForProfile(profile), localDay(now));
 }
 
 export async function importWordListFile(file) {

@@ -7,20 +7,23 @@
  */
 
 import { getProfile } from '../store/profiles.js';
-import { getRewardSettings } from '../rewards/wallet.js';
+import { getRewardSettings, getWallet } from '../rewards/wallet.js';
 import { startSession } from '../engine/runner.js';
-import { hasClue } from '../engine/wordlist.js';
+import { hasSafeClue as hasClue, clueText, safeCaption } from '../engine/clues.js'; // A1: leak-safe clue text
 import { speech } from '../audio/speech.js';
 import {
-  celebrateBurst,
   el,
-  maskWordInText,
   renderLetterDiff,
   renderLetterSlots,
   renderPlayHud,
   showToast,
   speakerSvg,
 } from '../ui/components.js';
+import {
+  playLevelUpBurst,
+  playThemeCelebration,
+  renderTrophySummaryCard,
+} from '../ui/celebrations.js';
 import { createKeyboard } from '../ui/keyboard.js';
 import { applyTheme, getAvatarEmoji, getTheme, pickRandom, renderThemeSceneSvg } from '../ui/themes.js';
 
@@ -50,30 +53,20 @@ function buildGuidedTiles(wordStr) {
 }
 
 function clueCaption(word, kind) {
+  // A1: all clue text comes from engine/clues.js, which never shows the spelling.
   switch (kind) {
     case 'definition':
-      return {
-        tag: 'Definition',
-        text: maskWordInText(word.definitions?.[0] || '', word.word),
-      };
+      return { tag: 'Definition', text: clueText(word, 'definition') };
     case 'sentence':
-      return {
-        tag: 'Sentence',
-        text: maskWordInText(word.sentence || '', word.word),
-      };
+      return { tag: 'Sentence', text: clueText(word, 'sentence') };
     case 'partOfSpeech':
-      return { tag: 'Part of Speech', text: word.partOfSpeech || '' };
+      return { tag: 'Part of Speech', text: clueText(word, 'partOfSpeech') };
     case 'origin':
-      return { tag: 'Language of Origin', text: word.origin || '' };
+      return { tag: 'Language of Origin', text: clueText(word, 'origin') };
     case 'altPronunciation':
-      return { tag: 'Another Pronunciation', text: word.altPronunciation || '' };
-    case 'syllables': {
-      const parts = String(word.syllables || '').split(/[·\-.\s]+/).filter(Boolean);
-      return {
-        tag: 'Syllable Hint',
-        text: parts.length ? `${parts.length} syllables: ${parts.map((p) => '●'.repeat(p.length)).join(' · ')}` : '',
-      };
-    }
+      return { tag: 'Another Pronunciation', text: clueText(word, 'altPronunciation') };
+    case 'syllables':
+      return { tag: 'Syllable Hint', text: clueText(word, 'syllables') };
     default:
       return { tag: 'Ready', text: 'Tap "Hear the Word" or pick any clue button above.' };
   }
@@ -112,15 +105,17 @@ export function PracticeScreen({ router, app }) {
       };
 
       const boot = async () => {
-        const [profile, rewardSettings] = await Promise.all([
+        const [profile, rewardSettings, initialWallet] = await Promise.all([
           getProfile(profileId),
           getRewardSettings().catch(() => ({ rewardName: 'PS5', minutesPerToken: 5 })),
+          getWallet(profileId).catch(() => ({ level: 1 })),
         ]);
         if (!alive) return;
         if (!profile) {
           router.go('#/kids', { replace: true });
           return;
         }
+        const startLevel = initialWallet?.level || 1;
         const rewardName = rewardSettings?.rewardName || 'PS5';
         const theme = app?.setTheme ? (app.setTheme(profile.theme), getTheme(profile.theme)) : applyTheme(profile.theme);
         const session = await startSession(profile.id, {
@@ -172,6 +167,8 @@ export function PracticeScreen({ router, app }) {
         let peekActive = false;
         let peekedThisWord = false;
         let roundOutcomes = [];
+        let streakInRound = 0;
+        let bestStreak = 0;
         let speechRecoveryBtn = null;
         let speakHeroBtn = null;
 
@@ -228,45 +225,36 @@ export function PracticeScreen({ router, app }) {
           }
           const summary = await session.finish();
           finished = true;
+          const afterWallet = await getWallet(profile.id).catch(() => ({ level: startLevel }));
           if (!alive) return;
 
-          celebrateBurst({ style: profile.equipped?.fx || 'default' });
+          const newLevel = afterWallet?.level || startLevel;
+          const leveledUp = newLevel > startLevel;
+          if (leveledUp) {
+            playLevelUpBurst({ level: newLevel, themeId: theme.id });
+          } else {
+            playThemeCelebration({
+              themeId: theme.id,
+              streak: Math.max(bestStreak, summary.correct >= 3 ? 3 : 1),
+              fxStyle: profile.equipped?.fx || 'default',
+            });
+          }
+
           section.className = 'screen screen--scroll is-active';
           section.innerHTML = '';
 
           const wrap = el('div', { class: 'page-wrap' });
           wrap.append(
-            el(
-              'div',
-              { class: 'card', style: 'text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;padding:28px 22px;' },
-              el('div', { style: 'width:100%;max-width:340px;border-radius:18px;overflow:hidden;', html: renderThemeSceneSvg(theme.id) }),
-              el('h1', { class: 'h1' }, theme.summaryTitle),
-              el(
-                'p',
-                { class: 'muted', style: 'margin:0;font-size:18px;font-weight:700;' },
-                `${summary.correct} of ${summary.answered} spelled right (${Math.round((summary.accuracy || 0) * 100)}%)`
-              ),
-              el(
-                'div',
-                { style: 'display:flex;flex-wrap:wrap;justify-content:center;gap:10px;' },
-                el('span', { class: 'pill pill--accent' }, `+${summary.xp ?? 0} XP`),
-                el('span', { class: 'pill pill--gold' }, `+${summary.coins ?? 0} 🪙 Coins`),
-                summary.tokens > 0
-                  ? el(
-                      'span',
-                      { class: 'pill pill--success' },
-                      `+${summary.tokens} token${summary.tokens === 1 ? '' : 's'} (${summary.minutesEarned ?? 0} ${summary.rewardName || rewardName} min!)`
-                    )
-                  : summary.tokenCapped
-                    ? el('span', { class: 'pill' }, 'Daily token cap reached — XP & coins still earned!')
-                    : null
-              ),
-              summary.newlyMastered?.length
-                ? el('div', { class: 'pill pill--success' }, `Mastered: ${summary.newlyMastered.join(', ')}`)
-                : null,
-              el(
-                'div',
-                { style: 'display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:8px;' },
+            renderTrophySummaryCard({
+              themeId: theme.id,
+              title: theme.summaryTitle,
+              subtitle: `${summary.correct} of ${summary.answered} spelled right (${Math.round((summary.accuracy || 0) * 100)}%)`,
+              summary,
+              rewardName,
+              bestStreak,
+              leveledUp,
+              newLevel,
+              actions: [
                 el(
                   'button',
                   {
@@ -295,9 +283,9 @@ export function PracticeScreen({ router, app }) {
                     onClick: () => router.go(`#/rewards/${encodeURIComponent(profile.id)}`),
                   },
                   '🎮 Rewards Shop'
-                )
-              )
-            )
+                ),
+              ],
+            })
           );
           section.append(wrap);
         };
@@ -338,15 +326,27 @@ export function PracticeScreen({ router, app }) {
           if (result.correct) {
             roundOutcomes[session.index] = true;
             phase = 'resolved';
-            celebrateBurst({ style: profile.equipped?.fx || 'default' });
-            speech.say(pickRandom(theme.praise), { rate: 1.0 });
+            if (!peekedThisWord) {
+              streakInRound += 1;
+              bestStreak = Math.max(bestStreak, streakInRound);
+            }
+            const praiseLine = pickRandom(theme.praise);
+            playThemeCelebration({
+              themeId: theme.id,
+              streak: peekedThisWord ? 1 : streakInRound,
+              fxStyle: profile.equipped?.fx || 'default',
+              label: praiseLine,
+            });
+            speech.say(praiseLine, { rate: 1.0 });
             if (result.fixit?.cleared) {
               showToast('Fix-It word cleared! Bonus XP!', { tone: 'gold' });
             }
           } else if (session.canRetry()) {
+            streakInRound = 0;
             phase = 'retry';
             speech.sayWord(word, { slow: true });
           } else {
+            streakInRound = 0;
             roundOutcomes[session.index] = false;
             phase = 'resolved';
             speech.sayLetters(result.target || word.word);
@@ -446,6 +446,7 @@ export function PracticeScreen({ router, app }) {
           // Left column: Audio & Clues
           const audioPanel = el('div', { class: 'card audio-panel' });
 
+          const hasNaturalClip = typeof speech.hasClip === 'function' && speech.hasClip(word, 'word');
           speakHeroBtn = el(
             'button',
             {
@@ -458,7 +459,7 @@ export function PracticeScreen({ router, app }) {
               'span',
               { class: 'speak-hero__text' },
               el('strong', {}, 'Hear the Word'),
-              el('small', {}, 'Tap anytime to listen again')
+              el('small', {}, hasNaturalClip ? '🎙️ Natural voice • Tap anytime' : 'Tap anytime to listen again')
             )
           );
 
@@ -543,6 +544,9 @@ export function PracticeScreen({ router, app }) {
           const caption = peekActive
             ? { tag: 'Quick Peek (practice assist — hides in 2s)', text: word.word }
             : clueCaption(word, activeClue);
+          const displayCaptionText = peekActive
+            ? caption.text
+            : (caption.text || safeCaption('Tap "Hear the Word" or a clue button.', word));
 
           const clueBox = el(
             'div',
@@ -551,7 +555,7 @@ export function PracticeScreen({ router, app }) {
             el(
               'p',
               { class: 'clue-box__text', style: peekActive ? 'font-size:26px;font-weight:800;letter-spacing:0.06em;' : '' },
-              caption.text || 'Tap "Hear the Word" or a clue button.'
+              displayCaptionText
             )
           );
 

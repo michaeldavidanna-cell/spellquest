@@ -3,7 +3,9 @@
  * toasts, modals, friendly error messages, and celebration bursts.
  */
 
-import { maskWord } from '../engine/text.js';
+import { clueText, hasSafeClue, safeCaption } from '../engine/clues.js';
+
+export { clueText, hasSafeClue, safeCaption };
 
 const ERROR_MESSAGES = {
   'not-enough-tokens': 'You need more tokens before cashing in this pass.',
@@ -125,12 +127,11 @@ export function celebrateBurst({ style = 'default' } = {}) {
 }
 
 /**
- * Masks the target word (and stem variants) inside sentences/definitions so
- * on-screen clue captions never spoil the spelling before an attempt.
- * Delegates to engine/text.js maskWord (M4).
+ * Masks the target word (and stem variants) inside any non-clue caption or toast
+ * built from word data. Delegates to engine/clues.js safeCaption (A1).
  */
 export function maskWordInText(text, targetWord) {
-  return maskWord(text, targetWord, '______');
+  return safeCaption(text, targetWord);
 }
 
 /**

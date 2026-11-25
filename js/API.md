@@ -1,5 +1,44 @@
 # App core API (bee-arch)
 
+## Changed in A1 (clue leak, recorded audio, phonics ladder)
+
+The app `VERSION` is **0.2.0** in `sw.js` and `main.js`.
+
+| # | Change | What screens / bee-eng should do |
+|---|---|---|
+| 1 | **One clue sanitizer.** New `engine/clues.js`: `clueText(word, kind)` returns text that never shows the spelling, or `''`. Kinds: `definition`, `sentence`, `partOfSpeech`, `origin`, `altPronunciation`, `syllables`, `respell`. `hasSafeClue(word, kind)`, `safeClues(word)`, `safeCaption(text, word)` (for any other caption or toast built from word data). `maskWord` in `engine/text.js` is now the same sanitizer: it blanks the word, plurals, -ed/-ing, y→i, doubled consonant, dropped e, base forms (steps→step), roots that are most of the word (moss for mossy, Japan for Japanese), the word inside a longer token (unfinished), and the word split across tokens ("WIN-ter", respellings). A respelling that shares any spelled piece with the word is never shown. Same-name origins ("Krio" from Krio) show *"It comes from a language that has the same name as this word."* | **Show clue text only from `clueText()`**, never from raw word fields. Gate buttons with `hasSafeClue()` (not `hasClue()`). Practice and On Stage are already switched (I edited only their clue functions and the import line). Peek and the after-answer reveal still show the word on purpose. |
+| 2 | **Retry no longer shows the answer.** When a Practice miss will be retried, `submit()` returns `target: null`, `revealed: false`, empty `patterns`, and `targetMarks` as `_` blanks (same length, same `ok` flags). The child sees which of *their* letters were right. The final result (correct, or the second miss) has `revealed: true` and the full target, as before. | Nothing (`renderLetterDiff` already draws blanks). Don't read `word.word` to fill the retry row. |
+| 3 | **Recorded clips first.** `audio/clips.js` plus `speech.js`. Every `speech.sayWord / sayClue / sayWordSpelled / replay` call plays a recorded natural-voice clip when one exists, started synchronously in the tap through one reusable `HTMLAudioElement` (unlocked by the first tap anywhere; `main.js` already calls `speech.unlock()` on pointerdown). The device voice is used only for parts with no clip, or when a clip fails (once, never twice), so "Part of speech" and spelled-out letters stay on the device voice. "Slow" plays the clip at 0.75× with pitch kept. The `speech:state` events and the "Voice paused" replay work the same. New: `speech.hasClip(word, kind)` and `speech.loadClips(listIds)` (`main.js` calls it at boot and on `wordlists:changed`). | Nothing required. Optional: a small "natural voice" badge when `speech.hasClip(word,'word')`. |
+| 4 | **Offline audio: parent action.** `import { downloadAllAudio, audioStatus, clearAudio } from './audio/clips.js'`. `downloadAllAudio({ onProgress({done,total,failed}), signal })` resolves `{ok, total, done, failed, aborted, reason?}`, where `reason` is one of `'no-audio' \| 'storage-full' \| 'no-cache-storage'`. It resumes if called again, and a second call while running returns the same promise. `audioStatus()` resolves `{total, cached}`. `clearAudio()` deletes the clips (they come back as they are played). | **bee-ui:** add a Parent-area button *"Download all audio for offline"* with a progress bar (`done/total`), a Cancel button (`AbortController`), and the status line *"N of M clips saved on this iPad"* from `audioStatus()`. Ask for Wi-Fi (it is many MB). No PIN needed (it only downloads the app's own files). |
+| 5 | **Service worker.** Clips are **not** precached. Each one is cached in `spellingbee-audio` (unversioned, kept across app updates) the first time it plays, or by `downloadAllAudio`. Safari's media Range requests get a `206` from the cached file. | Nothing. |
+| 6 | **Phonics ladder** (`data/phonics.json`, `engine/phonics.js`, `store/phonics.js`). 9 levels, 581 items: letter names (52), letter sounds (91), rhyming (92), CVC words (101), digraphs sh/ch/th/wh/ck (44), blends (58), Dolch pre-primer (40), Dolch primer (52), two-word phrases (54). The level is derived from progress: a level is mastered when 80% of its items' last answers were right, or it is "tested out" when the first 8 items she meets are all right first time. Each session is about 3/4 current level (missed items first, then new ones, with a sneak peek of the next level near the end) and 1/4 spaced review of earlier levels. Once every level is mastered, every round is spaced review, so she never runs out. | See the **Phonics ladder** section below for the round types. `startPhonics(id, { rounds, types })`: pass the round types your screen can draw. **The default is the B2 types only** (`find-letter`, `first-sound`, `build`), so the current screen keeps working and simply skips the rhyming and phrase levels. Add `'choose'` and `'build-phrase'` to unlock them. |
+| 7 | `startPhonics` returns `game.ladder` (`{levels, current, currentIndex, allMastered}`), `game.level` (1-based number) and `game.levelName`. `summary.ladder` is `{current, before, levelUp, newlyMasteredLevels, levels}`. New `phonicsLadder(profileId, {types})` in `engine/runner.js` for a level map. | Celebrate `summary.ladder.levelUp` (G1). Show `round.levelTitle` and `round.levelEmoji` on the prompt card. |
+
+### Phonics ladder: round types (A1)
+
+Every round has `key`, `itemId`, `type`, `mode`, `level` (1-based number), `levelId`, `levelTitle`, `levelEmoji` and `say` (the sentence to speak for the prompt; speak it with `speech.say(round.say)` inside the tap). Answer with `game.answer(value)`; the result is the same as before: `{correct, partial, tries, reveal, answer, reward}`.
+
+| type | mode(s) | fields | answer with |
+|---|---|---|---|
+| `find-letter` | `name` (letter names), `sound` (letter sounds) | `letter` (lowercase), `choices` (strings, already in display case), `display`, `case: 'upper'\|'lower'` (name mode), `sayAs` (sound mode: `speech.sayPhonics(letter)`) | the tapped choice (case ignored) |
+| `first-sound` | `picture` | `letter`, `picture`, `emoji`, `choices` | the tapped letter |
+| `build` | `cvc`, `digraphs`, `blends`, `sight` | `word`, `tiles` (letters plus 2 decoys), `emoji` (may be null), `chunks` (digraphs: e.g. `['sh','i','p']`, for optional chunk tiles), `digraph`, `showWord` (**true until she has built it right once; then hide the word and let her build from the sound and picture**) | the letters built so far (partial until full length) |
+| `choose` *(new)* | `rhyme`, `sight` | `title`, `prompt`, `target: {label, emoji, say}` (rhyme: the word to rhyme with; sight: `label` is null, so play `say` only), `choices: [{id, value, label, word, emoji, say}]`, `answer` (a choice id) | the choice's `value` (= `id`) |
+| `build-phrase` *(new)* | `phrase` | `phrase` (e.g. `"big dog"`), `word` (same), `words: ['big','dog']`, `tiles` (letters only, plus 3 decoys), `emoji`, `showWord` | the letters built so far; spaces and case are ignored, so show a gap between words in the slots |
+
+Sight words are recognised first (a `choose` round) and spelled with `build` once she knows them, if your screen opted in to `choose`. Without `choose` they are always `build`.
+
+### Clip manifest (bee-eng's V1 output)
+
+`app/audio/<listId>/manifest.json`, where `<listId>` is the word list's `id` (e.g. `district-2026-r2`):
+
+```json
+{ "schema": "spellingbee.audio/1", "listId": "district-2026-r2", "ext": "m4a", "voice": "…",
+  "clips": { "w0001": ["word", "definition", "sentence", "origin"], "w0002": ["word", "sentence"] } }
+```
+
+A clip is `app/audio/<listId>/<wordId>/<kind>.<ext>`. An entry may instead map kinds to paths inside the list folder (`{"word": "w0001/word.m4a"}`). Absolute and `../` paths are ignored, and only list clips that exist. **Record exactly `spokenText(word, kind)` from `engine/clues.js`** (word = `audio.sayAs` or the word; definition = `"Definition: …"`; sentence as written; origin = `"Language of origin: …."`), so the clip and the device-voice fallback say the same thing. Use AAC `.m4a` (Safari-friendly), mono, about 64 kbps.
+
 ## Changed in B1a (wire these in the screens)
 
 These are fixes for review R1. Each section further down has the details.
@@ -29,7 +68,7 @@ Every path is relative to `app/js/`. There are no dependencies and no build step
 1. **Speech must start inside the tap.** Call `speech.*` synchronously from the `pointerup`/`click` handler. Don't `await` anything before the call, and don't call it from a `setTimeout`. Every word record the screen needs is already in memory, and `session.submit()` returns synchronously for this reason.
 2. Use relative URLs only (`./`, never `/`). The site is served from a GitHub Pages sub-path.
 3. Don't use `<input>` for spelling. The UI keyboard calls `session.submit(letters)`.
-4. Don't hardcode word fields. Hide a clue button when its field is empty (`hasClue(word, kind)`).
+4. Don't hardcode word fields. Get clue text only from `clueText(word, kind)` (`engine/clues.js`) and hide a clue button when `hasSafeClue(word, kind)` is false.
 
 ## Boot and wiring (`main.js`, `router.js`)
 

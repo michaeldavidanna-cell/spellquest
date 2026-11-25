@@ -16,6 +16,7 @@ import {
   requestCashIn,
 } from '../rewards/wallet.js';
 import { celebrateBurst, el, friendlyError, showToast } from '../ui/components.js';
+import { playThemeCelebration } from '../ui/celebrations.js';
 import { applyTheme, COSMETIC_SHOP, getAvatarEmoji } from '../ui/themes.js';
 
 export function RewardsScreen({ router, app }) {
@@ -309,7 +310,12 @@ export function RewardsScreen({ router, app }) {
                             const res = await buyItem(profile.id, item);
                             if (res?.ok) {
                               await equipItem(profile.id, item.slot, item.id);
-                              celebrateBurst({ style: item.slot === 'fx' ? item.id : 'default' });
+                              playThemeCelebration({
+                                themeId: profile.theme,
+                                streak: 3,
+                                fxStyle: item.slot === 'fx' ? item.id : 'default',
+                                label: `Unlocked ${item.name}!`,
+                              });
                               showToast(`Unlocked ${item.name}!`, { tone: 'gold' });
                             } else {
                               showToast(friendlyError(res?.reason, 'Not enough coins yet.'));
