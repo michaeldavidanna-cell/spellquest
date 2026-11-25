@@ -6,7 +6,7 @@ import { getActiveProfileId, getProfile, THEMES } from './store/profiles.js';
 import { loadWordLists } from './store/wordlists.js';
 import { speech } from './audio/speech.js';
 
-export const VERSION = '0.1.2'; // keep in step with VERSION in sw.js
+export const VERSION = '0.2.1'; // keep in step with VERSION in sw.js
 
 export function isStandalone() {
   return window.matchMedia?.('(display-mode: standalone)').matches || navigator.standalone === true;
@@ -71,8 +71,11 @@ async function boot() {
 
   await openDB();
   requestPersistence(); // granted by heuristic; Home Screen apps are the usual case
-  await loadWordLists();
+  const lists = await loadWordLists();
   speech.initPhonicsRecordings();
+  // A1: recorded clips. Not awaited: until a manifest arrives the device voice is used.
+  speech.loadClips(lists.map((l) => l.id));
+  events.on('wordlists:changed', ({ lists: ls }) => speech.loadClips((ls ?? []).map((l) => l.id)));
 
   const activeId = getActiveProfileId();
   applyProfile(activeId ? await getProfile(activeId) : null);

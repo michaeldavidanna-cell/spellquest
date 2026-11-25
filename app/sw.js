@@ -1,7 +1,11 @@
 // Offline service worker (T2 §2): cache-first for app files, network-first for the page.
 // Bump VERSION (and VERSION in js/main.js) on every release.
-const VERSION = '0.1.2';
+const VERSION = '0.2.1';
 const CACHE = `spellingbee-${VERSION}`;
+// A1: recorded clips live in their own unversioned cache, filled on first play or by the
+// parent's "Download all audio for offline" (js/audio/clips.js). They are never precached.
+const AUDIO_CACHE = 'spellingbee-audio';
+const MEDIA = /\/audio\/.+\.(m4a|mp3|aac|wav|ogg|opus)$/i;
 
 // Core files. Missing entries are skipped so screens can be added without breaking install;
 // the page also sends every file it loaded (see 'cache-urls').
@@ -28,6 +32,10 @@ const CORE = [
   'js/rewards/wallet.js',
   'js/parent/pin.js',
   'js/audio/speech.js',
+  'js/audio/clips.js',
+  'js/engine/clues.js',
+  'js/store/phonics.js',
+  'data/phonics.json',
   'js/screens/index.js',
   'js/screens/profiles.js',
   'js/screens/home.js',
@@ -40,6 +48,7 @@ const CORE = [
   'js/ui/components.js',
   'js/ui/keyboard.js',
   'js/ui/themes.js',
+  'js/ui/celebrations.js',
   'css/base.css',
   'css/themes/pinehook.css',
   'css/themes/ridgecrest.css',
@@ -73,7 +82,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter((k) => k.startsWith('spellingbee-') && k !== CACHE).map((k) => caches.delete(k)));
+    await Promise.all(keys.filter((k) => k.startsWith('spellingbee-') && k !== CACHE && k !== AUDIO_CACHE).map((k) => caches.delete(k)));
     await self.clients.claim();
   })());
 });
@@ -114,11 +123,53 @@ async function staleWhileRevalidate(event) {
   return (await refresh) || new Response('', { status: 504, statusText: 'Offline' });
 }
 
+// Safari asks for media with a Range header and needs a 206 answer, so clips are cached
+// whole and the requested byte range is cut from the cached copy.
+async function rangeFrom(response, rangeHeader) {
+  const buf = await response.arrayBuffer();
+  const m = /bytes=(\d*)-(\d*)/.exec(rangeHeader || '');
+  const size = buf.byteLength;
+  let start = m && m[1] !== '' ? Number(m[1]) : 0;
+  let end = m && m[2] !== '' ? Number(m[2]) : size - 1;
+  if (m && m[1] === '' && m[2] !== '') { start = Math.max(0, size - Number(m[2])); end = size - 1; } // suffix range
+  if (start >= size) return new Response('', { status: 416, headers: { 'Content-Range': `bytes */${size}` } });
+  end = Math.min(end, size - 1);
+  return new Response(buf.slice(start, end + 1), {
+    status: 206,
+    statusText: 'Partial Content',
+    headers: {
+      'Content-Type': response.headers.get('Content-Type') || 'audio/mp4',
+      'Content-Range': `bytes ${start}-${end}/${size}`,
+      'Content-Length': String(end - start + 1),
+      'Accept-Ranges': 'bytes',
+    },
+  });
+}
+
+async function audioClip(request) {
+  const cache = await caches.open(AUDIO_CACHE);
+  const url = request.url.split('#')[0];
+  let res = await cache.match(url, { ignoreSearch: true });
+  if (!res) {
+    try {
+      const net = await fetch(url); // whole file, no Range, so it can be cached
+      if (!net.ok) return net;
+      await cache.put(url, net.clone()).catch(() => {}); // storage full: still play it
+      res = net;
+    } catch {
+      return new Response('', { status: 504, statusText: 'Offline' });
+    }
+  }
+  const range = request.headers.get('range');
+  return range ? rangeFrom(res, range) : res;
+}
+
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return; // the app makes no third-party requests
   if (request.mode === 'navigate') { event.respondWith(networkFirstPage(request)); return; }
+  if (MEDIA.test(url.pathname)) { event.respondWith(audioClip(request)); return; }
   event.respondWith(staleWhileRevalidate(event));
 });

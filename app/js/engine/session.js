@@ -158,6 +158,16 @@ export class Session {
       progress: this.progress.get(word.key) ?? null,
     };
     this.lastResult = result;
+    // A1: a miss that will be retried must not show the answer, or the retry is just copying.
+    // The child sees which of THEIR letters were right; the target row is blanks of the same length.
+    if (!g.correct && this.canRetry()) {
+      result.revealed = false;
+      result.target = null;
+      result.targetMarks = g.targetMarks.map((m) => (m.sep ? { ...m } : { ch: '_', ok: m.ok }));
+      result.patterns = [];
+    } else {
+      result.revealed = true;
+    }
     return result;
   }
 

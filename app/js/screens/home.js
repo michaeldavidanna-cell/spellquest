@@ -6,7 +6,8 @@
 import { getProfile, setActiveProfile, updateProfile } from '../store/profiles.js';
 import { wordsForProfile } from '../store/wordlists.js';
 import { getWallet, getRewardSettings } from '../rewards/wallet.js';
-import { readiness } from '../engine/runner.js';
+import { phonicsLadder, readiness } from '../engine/runner.js';
+import { PHONICS_TYPES } from '../engine/phonics.js';
 import { el, showToast } from '../ui/components.js';
 import {
   applyTheme,
@@ -39,7 +40,7 @@ export function Home({ router, app }) {
         setActiveProfile(profile.id);
         const theme = app?.setTheme ? (app.setTheme(profile.theme), getTheme(profile.theme)) : applyTheme(profile.theme);
 
-        const [wallet, ready, rewardSettings] = await Promise.all([
+        const [wallet, ready, rewardSettings, ladder] = await Promise.all([
           getWallet(profile.id).catch(() => ({
             xp: 0,
             level: 1,
@@ -54,7 +55,10 @@ export function Home({ router, app }) {
             equipped: {},
           })),
           readiness(profile.id).catch(() => ({ total: 0, mastered: 0, seen: 0, fixit: 0, pct: 0 })),
-          getRewardSettings().catch(() => ({ minutesPerToken: 5, dailyEarnCap: 6 })),
+          getRewardSettings().catch(() => ({ rewardName: 'PS5', minutesPerToken: 5, dailyEarnCap: 6 })),
+          profile.mode === 'phonics'
+            ? phonicsLadder(profile.id, { types: PHONICS_TYPES }).catch(() => null)
+            : Promise.resolve(null),
         ]);
         if (!alive) return;
 
@@ -291,6 +295,28 @@ export function Home({ router, app }) {
         }
 
         wrap.append(actions);
+
+        // Libby's Phonics Level Ladder map on Home screen (A1 ladder)
+        if (profile.mode === 'phonics' && ladder?.levels?.length) {
+          const pills = ladder.levels.map((lv) => {
+            const isCur = lv.id === ladder.current;
+            const cls = lv.mastered ? 'pill pill--success' : isCur ? 'pill pill--gold' : 'pill';
+            const statusIcon = lv.mastered ? '✓ ' : isCur ? '▶ ' : '';
+            return el(
+              'span',
+              { class: cls, style: 'padding:8px 14px;font-size:15px;' },
+              `${statusIcon}${lv.emoji ? `${lv.emoji} ` : ''}${lv.title} (${lv.known}/${lv.total})`
+            );
+          });
+          wrap.append(
+            el(
+              'div',
+              { class: 'card' },
+              el('h3', { class: 'h3', style: 'margin-bottom:10px;' }, 'Reading Adventure Ladder'),
+              el('div', { style: 'display:flex;flex-wrap:wrap;gap:8px;' }, ...pills)
+            )
+          );
+        }
 
         // Original World Theme Switcher
         const themeStrip = el('div', { class: 'theme-strip' });

@@ -1,0 +1,6229 @@
+{
+  "schema": "spellingbee.wordlist/1",
+  "id": "grade3",
+  "title": "3rd Grade Words",
+  "grade": 3,
+  "source": {
+    "kind": "original",
+    "note": "Original grade 2-3 pattern list written for this app. Not copied from a published spelling book.",
+    "writtenAt": "2026-11-25"
+  },
+  "attribution": "Definitions and example sentences were written in simple words for kids. Language-of-origin notes come from English Wiktionary (https://en.wiktionary.org/), dual-licensed CC BY-SA 4.0 and GFDL, when a source line was found; other origins are marked best-guess and should be checked against a dictionary before a bee. This list was written for this app and is not a copy of a published spelling book. This app is not affiliated with the Scripps National Spelling Bee or Merriam-Webster.",
+  "words": [
+    {
+      "id": "g0001",
+      "word": "cat",
+      "accept": [
+        "cat"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small furry pet that purrs"
+      ],
+      "sentence": "The cat napped in a sunny window after the bike ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0002",
+      "word": "hat",
+      "accept": [
+        "hat"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a soft cover you wear on your head"
+      ],
+      "sentence": "He lost his hat on the windy dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0003",
+      "word": "map",
+      "accept": [
+        "map"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a drawing that shows where places are"
+      ],
+      "sentence": "We checked the map before the trail ride.",
+      "origin": "Latin",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0004",
+      "word": "bag",
+      "accept": [
+        "bag"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a soft container with a handle"
+      ],
+      "sentence": "She packed a snack in her bag for the lake.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0005",
+      "word": "jam",
+      "accept": [
+        "jam"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sweet fruit spread for toast"
+      ],
+      "sentence": "He spread jam on the warm bread at camp.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0006",
+      "word": "fan",
+      "accept": [
+        "fan"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a machine that blows cool air"
+      ],
+      "sentence": "The fan hummed in the hot cabin.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0007",
+      "word": "nap",
+      "accept": [
+        "nap"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a short sleep in the daytime"
+      ],
+      "sentence": "The puppy took a nap on the porch.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0008",
+      "word": "rag",
+      "accept": [
+        "rag"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small old cloth used for wiping"
+      ],
+      "sentence": "She dried the bike with a rag.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0009",
+      "word": "van",
+      "accept": [
+        "van"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a big boxy machine on wheels that carries people"
+      ],
+      "sentence": "The family loaded the bikes into the van.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0010",
+      "word": "pan",
+      "accept": [
+        "pan"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a flat metal dish used for cooking"
+      ],
+      "sentence": "Dad fried trout in the pan.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0011",
+      "word": "cap",
+      "accept": [
+        "cap"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small brimmed cover for your head"
+      ],
+      "sentence": "Her cap shaded her eyes at the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0012",
+      "word": "mad",
+      "accept": [
+        "mad"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "feeling angry"
+      ],
+      "sentence": "He felt mad after the string snapped.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-a"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0013",
+      "word": "bed",
+      "accept": [
+        "bed"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the furniture you sleep on"
+      ],
+      "sentence": "She climbed into bed after the long ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0014",
+      "word": "red",
+      "accept": [
+        "red"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "the color of a ripe strawberry"
+      ],
+      "sentence": "The red fox crossed the trail.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0015",
+      "word": "pet",
+      "accept": [
+        "pet"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an animal you keep and care for"
+      ],
+      "sentence": "The pet goat followed us to the dock.",
+      "origin": "Scots",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0016",
+      "word": "net",
+      "accept": [
+        "net"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a mesh used for scooping minnows"
+      ],
+      "sentence": "She scooped minnows with a net.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0017",
+      "word": "web",
+      "accept": [
+        "web"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the sticky trap a spider spins"
+      ],
+      "sentence": "Dew sparkled on the web.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0018",
+      "word": "hen",
+      "accept": [
+        "hen"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a female chicken"
+      ],
+      "sentence": "The hen pecked grain near the cabin.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0019",
+      "word": "pen",
+      "accept": [
+        "pen"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tool that writes with ink"
+      ],
+      "sentence": "She wrote the score with a blue pen.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0020",
+      "word": "ten",
+      "accept": [
+        "ten"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the number after nine"
+      ],
+      "sentence": "He counted ten ducks on the pond.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0021",
+      "word": "wet",
+      "accept": [
+        "wet"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "covered with water"
+      ],
+      "sentence": "His shoes got wet at the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0022",
+      "word": "jet",
+      "accept": [
+        "jet"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a fast airplane"
+      ],
+      "sentence": "A jet roared over the mountain.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0023",
+      "word": "men",
+      "accept": [
+        "men"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "adult male people"
+      ],
+      "sentence": "Two men helped launch the boat.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0024",
+      "word": "beg",
+      "accept": [
+        "beg"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to ask for something in a pleading way"
+      ],
+      "sentence": "The dog tried to beg for a bite of toast.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0025",
+      "word": "sit",
+      "accept": [
+        "sit"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to rest on your bottom"
+      ],
+      "sentence": "We sit on the dock and watch the water.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0026",
+      "word": "pin",
+      "accept": [
+        "pin"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a thin pointed fastener"
+      ],
+      "sentence": "She used a pin to hold the badge.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0027",
+      "word": "pig",
+      "accept": [
+        "pig"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a farm animal with a snout"
+      ],
+      "sentence": "The pig rolled in the cool mud.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0028",
+      "word": "dig",
+      "accept": [
+        "dig"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to make a hole by scooping dirt"
+      ],
+      "sentence": "The dog loves to dig by the fence.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0029",
+      "word": "fin",
+      "accept": [
+        "fin"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the flat part that helps a trout move"
+      ],
+      "sentence": "A bright fin broke the surface of the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0030",
+      "word": "lip",
+      "accept": [
+        "lip"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the soft edge of your mouth"
+      ],
+      "sentence": "He bit his lip when the bike bounced.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0031",
+      "word": "rip",
+      "accept": [
+        "rip"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tear in cloth or paper"
+      ],
+      "sentence": "There was a rip in the old tent.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0032",
+      "word": "kid",
+      "accept": [
+        "kid"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a child"
+      ],
+      "sentence": "Every kid wanted a turn on the rope swing.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0033",
+      "word": "mix",
+      "accept": [
+        "mix"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to stir things together"
+      ],
+      "sentence": "We mix berries into the batter.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0034",
+      "word": "six",
+      "accept": [
+        "six"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the number after five"
+      ],
+      "sentence": "She has six stickers on her helmet.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0035",
+      "word": "fix",
+      "accept": [
+        "fix"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to repair something broken"
+      ],
+      "sentence": "Dad will fix the flat tire.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0036",
+      "word": "win",
+      "accept": [
+        "win"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to finish ahead of the others in a game"
+      ],
+      "sentence": "Our team can win the relay.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-i"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0037",
+      "word": "hot",
+      "accept": [
+        "hot"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "very warm"
+      ],
+      "sentence": "The soup was too hot to sip.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0038",
+      "word": "pot",
+      "accept": [
+        "pot"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a deep round container for cooking"
+      ],
+      "sentence": "Soup bubbled in the pot.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0039",
+      "word": "top",
+      "accept": [
+        "top"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the highest part of something"
+      ],
+      "sentence": "We reached the top of the small hill.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0040",
+      "word": "dog",
+      "accept": [
+        "dog"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a furry pet that barks"
+      ],
+      "sentence": "The dog raced beside the bike.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0041",
+      "word": "log",
+      "accept": [
+        "log"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a thick piece of a tree trunk"
+      ],
+      "sentence": "We sat on a log beside the trail.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0042",
+      "word": "hop",
+      "accept": [
+        "hop"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to jump on one foot or with both feet together"
+      ],
+      "sentence": "The frog can hop from rock to rock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0043",
+      "word": "job",
+      "accept": [
+        "job"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "work that someone does"
+      ],
+      "sentence": "Her job was to carry the water bottle.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0044",
+      "word": "mop",
+      "accept": [
+        "mop"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tool with a spongy head for cleaning floors"
+      ],
+      "sentence": "He used a mop after the muddy boots.",
+      "origin": "Latin",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0045",
+      "word": "box",
+      "accept": [
+        "box"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a container with flat sides"
+      ],
+      "sentence": "The crayons live in a box.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0046",
+      "word": "fox",
+      "accept": [
+        "fox"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a wild animal with a bushy tail"
+      ],
+      "sentence": "A fox slipped through the tall grass.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0047",
+      "word": "cot",
+      "accept": [
+        "cot"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a narrow bed used for camping"
+      ],
+      "sentence": "He slept on a cot in the tent.",
+      "origin": "Hindi",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0048",
+      "word": "nod",
+      "accept": [
+        "nod"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small up-and-down movement of the head"
+      ],
+      "sentence": "She gave a nod when the plan made sense.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-o"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0049",
+      "word": "bug",
+      "accept": [
+        "bug"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small crawling insect"
+      ],
+      "sentence": "A bug landed on the picnic blanket.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0050",
+      "word": "hug",
+      "accept": [
+        "hug"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a squeeze with both arms"
+      ],
+      "sentence": "She gave her brother a hug at the finish line.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0051",
+      "word": "cup",
+      "accept": [
+        "cup"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small open container you drink from"
+      ],
+      "sentence": "He filled a cup at the creek.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0052",
+      "word": "sun",
+      "accept": [
+        "sun"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the bright body that lights the daytime sky"
+      ],
+      "sentence": "The sun warmed the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "son"
+      ],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0053",
+      "word": "fun",
+      "accept": [
+        "fun"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "enjoyable"
+      ],
+      "sentence": "Skipping stones is fun at the lake.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0054",
+      "word": "mud",
+      "accept": [
+        "mud"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "wet soft dirt"
+      ],
+      "sentence": "The tires splashed mud on the trail.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0055",
+      "word": "bun",
+      "accept": [
+        "bun"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small round bread roll"
+      ],
+      "sentence": "He ate a bun with his soup.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0056",
+      "word": "nut",
+      "accept": [
+        "nut"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a hard-shelled seed"
+      ],
+      "sentence": "A squirrel hid a nut under the leaves.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0057",
+      "word": "pup",
+      "accept": [
+        "pup"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a young dog"
+      ],
+      "sentence": "The pup chased a tennis ball.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0058",
+      "word": "tub",
+      "accept": [
+        "tub"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a large container you wash in"
+      ],
+      "sentence": "Toys floated in the tub.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0059",
+      "word": "bus",
+      "accept": [
+        "bus"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a long machine on wheels that carries many riders"
+      ],
+      "sentence": "We rode the bus to the trailhead.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0060",
+      "word": "gum",
+      "accept": [
+        "gum"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a chewy sweet you do not swallow"
+      ],
+      "sentence": "She saved her gum for after lunch.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "short-vowel",
+        "short-u"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0061",
+      "word": "ship",
+      "accept": [
+        "ship"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a large boat that travels on the ocean"
+      ],
+      "sentence": "The ship sailed across the bay.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "sh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0062",
+      "word": "shop",
+      "accept": [
+        "shop"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a store where things are sold"
+      ],
+      "sentence": "We visited the shop for bait.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "sh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0063",
+      "word": "fish",
+      "accept": [
+        "fish"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an animal that lives and swims in water"
+      ],
+      "sentence": "He hopes to catch a fish at dawn.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "sh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0064",
+      "word": "dish",
+      "accept": [
+        "dish"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a plate for serving food"
+      ],
+      "sentence": "She set a dish of berries on the table.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "sh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0065",
+      "word": "shut",
+      "accept": [
+        "shut"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to close tight"
+      ],
+      "sentence": "Please shut the gate so the goat stays in.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "sh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0066",
+      "word": "rush",
+      "accept": [
+        "rush"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to hurry"
+      ],
+      "sentence": "Do not rush down the rocky path.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "sh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0067",
+      "word": "chop",
+      "accept": [
+        "chop"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to cut into pieces"
+      ],
+      "sentence": "We chop carrots for the stew.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "ch"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0068",
+      "word": "chin",
+      "accept": [
+        "chin"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the part of your face below your mouth"
+      ],
+      "sentence": "He rested his chin on his hands.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "ch"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0069",
+      "word": "chat",
+      "accept": [
+        "chat"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a friendly talk"
+      ],
+      "sentence": "They had a chat on the porch swing.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "ch"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0070",
+      "word": "chip",
+      "accept": [
+        "chip"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small broken piece"
+      ],
+      "sentence": "A chip of paint fell off the oar.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "ch"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0071",
+      "word": "much",
+      "accept": [
+        "much"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "determiner",
+      "definitions": [
+        "a great amount"
+      ],
+      "sentence": "There is not much breeze this morning.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "ch"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0072",
+      "word": "such",
+      "accept": [
+        "such"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "determiner",
+      "definitions": [
+        "of that kind"
+      ],
+      "sentence": "I have never seen such a big turtle.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "ch"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0073",
+      "word": "thin",
+      "accept": [
+        "thin"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "not thick"
+      ],
+      "sentence": "The ice looked thin near the shore.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "th"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0074",
+      "word": "bath",
+      "accept": [
+        "bath"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a wash in warm water"
+      ],
+      "sentence": "The dog needed a bath after the creek.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "th"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0075",
+      "word": "moth",
+      "accept": [
+        "moth"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a night-flying insect with dusty wings"
+      ],
+      "sentence": "A moth fluttered by the lantern.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "th"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0076",
+      "word": "them",
+      "accept": [
+        "them"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "pronoun",
+      "definitions": [
+        "those people or things"
+      ],
+      "sentence": "We waved to them from the boat.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "th"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0077",
+      "word": "then",
+      "accept": [
+        "then"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "after that"
+      ],
+      "sentence": "We pack the snacks and then we ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "th"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0078",
+      "word": "with",
+      "accept": [
+        "with"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "preposition",
+      "definitions": [
+        "in the company of, or using"
+      ],
+      "sentence": "She rode with her dad on the tandem.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "th"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0079",
+      "word": "when",
+      "accept": [
+        "when"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "conjunction",
+      "definitions": [
+        "at the time that"
+      ],
+      "sentence": "We leave when the bikes are ready.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "wh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0080",
+      "word": "whip",
+      "accept": [
+        "whip"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to move with a quick lashing motion"
+      ],
+      "sentence": "The flag began to whip in the gust.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "digraph",
+        "wh"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0081",
+      "word": "black",
+      "accept": [
+        "black"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "the darkest color"
+      ],
+      "sentence": "A black bird perched on the fence.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "bl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0082",
+      "word": "clap",
+      "accept": [
+        "clap"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to strike your hands together"
+      ],
+      "sentence": "We clap when the song ends.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "cl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0083",
+      "word": "flag",
+      "accept": [
+        "flag"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a cloth on a pole that stands for a group"
+      ],
+      "sentence": "The flag snapped above the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "fl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0084",
+      "word": "glad",
+      "accept": [
+        "glad"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "feeling happy"
+      ],
+      "sentence": "She was glad the sky had cleared.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "gl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0085",
+      "word": "grab",
+      "accept": [
+        "grab"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to take hold of quickly"
+      ],
+      "sentence": "Grab the rail before you step in.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "gr"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0086",
+      "word": "drop",
+      "accept": [
+        "drop"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to let something fall"
+      ],
+      "sentence": "Do not drop the worm bucket.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "dr"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0087",
+      "word": "frog",
+      "accept": [
+        "frog"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a jumping animal that lives near water"
+      ],
+      "sentence": "A frog sat on the lily pad.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "fr"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0088",
+      "word": "snap",
+      "accept": [
+        "snap"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to break with a sharp sound"
+      ],
+      "sentence": "Dry twigs snap under his boots.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "sn"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0089",
+      "word": "swim",
+      "accept": [
+        "swim"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to move through water with your arms and legs"
+      ],
+      "sentence": "They swim out to the raft.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "sw"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0090",
+      "word": "stop",
+      "accept": [
+        "stop"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to quit moving"
+      ],
+      "sentence": "We stop at the big oak for a drink.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "st"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0091",
+      "word": "spot",
+      "accept": [
+        "spot"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a particular place"
+      ],
+      "sentence": "Pick a shady spot for the picnic.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "sp"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0092",
+      "word": "trip",
+      "accept": [
+        "trip"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a journey to another place"
+      ],
+      "sentence": "The lake trip starts at sunrise.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "tr"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0093",
+      "word": "plan",
+      "accept": [
+        "plan"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an idea for what you will do"
+      ],
+      "sentence": "The plan is to pedal to the waterfall.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "pl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0094",
+      "word": "drum",
+      "accept": [
+        "drum"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an instrument you hit to make a beat"
+      ],
+      "sentence": "He tapped a drum by the campfire.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "dr"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0095",
+      "word": "twin",
+      "accept": [
+        "twin"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "one of two children born at the same time"
+      ],
+      "sentence": "Her twin shared the other paddle.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "tw"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0096",
+      "word": "crab",
+      "accept": [
+        "crab"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sea animal with a hard shell and pincers"
+      ],
+      "sentence": "A crab hid under the rock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "cr"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0097",
+      "word": "plum",
+      "accept": [
+        "plum"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a soft round purple fruit"
+      ],
+      "sentence": "She bit into a ripe plum.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "pl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0098",
+      "word": "sled",
+      "accept": [
+        "sled"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a vehicle that slides on snow"
+      ],
+      "sentence": "The sled flew down the gentle hill.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "sl"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0099",
+      "word": "spin",
+      "accept": [
+        "spin"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to turn around quickly"
+      ],
+      "sentence": "The wheel began to spin.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "sp"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0100",
+      "word": "snug",
+      "accept": [
+        "snug"
+      ],
+      "difficulty": 1,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "warm and cozy"
+      ],
+      "sentence": "The kitten felt snug in the blanket.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "blend",
+        "sn"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0101",
+      "word": "cake",
+      "accept": [
+        "cake"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sweet baked dessert"
+      ],
+      "sentence": "We shared a cake after the ride.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0102",
+      "word": "lake",
+      "accept": [
+        "lake"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a large body of water with land all around it"
+      ],
+      "sentence": "The lake was calm at sunrise.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0103",
+      "word": "game",
+      "accept": [
+        "game"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an activity with rules and a winner"
+      ],
+      "sentence": "Tag is her favorite game.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0104",
+      "word": "name",
+      "accept": [
+        "name"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "what people call you"
+      ],
+      "sentence": "He wrote his name on the helmet.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0105",
+      "word": "make",
+      "accept": [
+        "make"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to create or put something together"
+      ],
+      "sentence": "We make sandwiches before we leave.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0106",
+      "word": "tape",
+      "accept": [
+        "tape"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sticky strip that holds things in place"
+      ],
+      "sentence": "She fixed the tear with tape.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0107",
+      "word": "bike",
+      "accept": [
+        "bike"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a machine with two wheels that you pedal"
+      ],
+      "sentence": "Her bike has a bell and a basket.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0108",
+      "word": "ride",
+      "accept": [
+        "ride"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to travel on a bike or in a vehicle"
+      ],
+      "sentence": "They ride to the dock every Saturday.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0109",
+      "word": "time",
+      "accept": [
+        "time"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "what a clock measures"
+      ],
+      "sentence": "It is time to head back to camp.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0110",
+      "word": "line",
+      "accept": [
+        "line"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a long cord with a hook on the end"
+      ],
+      "sentence": "His line tugged hard.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0111",
+      "word": "kite",
+      "accept": [
+        "kite"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a light toy that flies on a string"
+      ],
+      "sentence": "The kite danced above the field.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0112",
+      "word": "five",
+      "accept": [
+        "five"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the number after four"
+      ],
+      "sentence": "She counted five turtles on a log.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0113",
+      "word": "home",
+      "accept": [
+        "home"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the place where you live"
+      ],
+      "sentence": "We headed home as the clouds gathered.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0114",
+      "word": "bone",
+      "accept": [
+        "bone"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a hard piece inside a body"
+      ],
+      "sentence": "The dog buried a bone by the porch.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0115",
+      "word": "note",
+      "accept": [
+        "note"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a short written message"
+      ],
+      "sentence": "Mom left a note on the counter.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0116",
+      "word": "rose",
+      "accept": [
+        "rose"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a flower with a sweet smell and thorns"
+      ],
+      "sentence": "A rose grew beside the fence.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0117",
+      "word": "hope",
+      "accept": [
+        "hope"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to wish for something good"
+      ],
+      "sentence": "I hope the trout are biting.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0118",
+      "word": "nose",
+      "accept": [
+        "nose"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the part of your face you smell with"
+      ],
+      "sentence": "The dog's nose found the hidden snack.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0119",
+      "word": "cube",
+      "accept": [
+        "cube"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a solid shape with six square sides"
+      ],
+      "sentence": "An ice cube clinked in the drink.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0120",
+      "word": "cute",
+      "accept": [
+        "cute"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "sweet and pleasing to look at"
+      ],
+      "sentence": "The ducklings looked cute in a row.",
+      "origin": "Latin",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0121",
+      "word": "mule",
+      "accept": [
+        "mule"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a strong animal with a horse parent and a donkey parent"
+      ],
+      "sentence": "The mule carried packs up the trail.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0122",
+      "word": "tune",
+      "accept": [
+        "tune"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a melody you can hum"
+      ],
+      "sentence": "He hummed a tune while he pedaled.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0123",
+      "word": "use",
+      "accept": [
+        "use"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to do a job with something"
+      ],
+      "sentence": "We use a mesh scoop for minnows.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false,
+      "audio": {
+        "sayAs": "yews",
+        "file": null
+      }
+    },
+    {
+      "id": "g0124",
+      "word": "huge",
+      "accept": [
+        "huge"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "extremely big"
+      ],
+      "sentence": "A huge turtle rested on the log.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0125",
+      "word": "wave",
+      "accept": [
+        "wave"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a moving ridge of water"
+      ],
+      "sentence": "A wave splashed over the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0126",
+      "word": "mine",
+      "accept": [
+        "mine"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "pronoun",
+      "definitions": [
+        "belonging to me"
+      ],
+      "sentence": "That blue helmet is mine.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0127",
+      "word": "rope",
+      "accept": [
+        "rope"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a thick strong cord"
+      ],
+      "sentence": "She tied the canoe with a rope.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0128",
+      "word": "tube",
+      "accept": [
+        "tube"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a hollow rubber ring that holds air in a tire"
+      ],
+      "sentence": "Air hissed out of the bike tube.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0129",
+      "word": "gate",
+      "accept": [
+        "gate"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a door in a fence or wall"
+      ],
+      "sentence": "Please latch the gate behind you.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0130",
+      "word": "rice",
+      "accept": [
+        "rice"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "small grains you cook and eat"
+      ],
+      "sentence": "We had rice with the grilled trout.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "silent-e"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0131",
+      "word": "rain",
+      "accept": [
+        "rain"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "water that falls from clouds"
+      ],
+      "sentence": "The rain tapped on the tent.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ai"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0132",
+      "word": "tail",
+      "accept": [
+        "tail"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the part that sticks out behind an animal"
+      ],
+      "sentence": "The fox's tail flashed and vanished.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ai"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0133",
+      "word": "wait",
+      "accept": [
+        "wait"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to stay until something happens"
+      ],
+      "sentence": "We wait for the light to change.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ai"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0134",
+      "word": "pain",
+      "accept": [
+        "pain"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a feeling of hurt in your body"
+      ],
+      "sentence": "His knee felt pain after the fall.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ai"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0135",
+      "word": "mail",
+      "accept": [
+        "mail"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "letters and packages that get sent"
+      ],
+      "sentence": "The mail arrived in a small carton.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ai"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0136",
+      "word": "play",
+      "accept": [
+        "play"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to join a game or have a good time"
+      ],
+      "sentence": "They play tag on the grass.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ay"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0137",
+      "word": "day",
+      "accept": [
+        "day"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the hours of light from dawn until dark"
+      ],
+      "sentence": "Saturday is our lake day.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ay"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0138",
+      "word": "stay",
+      "accept": [
+        "stay"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to remain in a place"
+      ],
+      "sentence": "We stay in a cabin by the water.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ay"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0139",
+      "word": "tree",
+      "accept": [
+        "tree"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tall plant with a trunk and branches"
+      ],
+      "sentence": "A tree shaded the picnic table.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ee"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0140",
+      "word": "feet",
+      "accept": [
+        "feet"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "the body parts you stand on"
+      ],
+      "sentence": "His feet were sore after the hike.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ee"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0141",
+      "word": "seed",
+      "accept": [
+        "seed"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the small part a plant grows from"
+      ],
+      "sentence": "She pressed a seed into the soil.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ee"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0142",
+      "word": "keep",
+      "accept": [
+        "keep"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to hold on to something"
+      ],
+      "sentence": "Keep your helmet on for the whole ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ee"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0143",
+      "word": "green",
+      "accept": [
+        "green"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "the color of summer grass"
+      ],
+      "sentence": "The green canoe belongs to our neighbor.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ee"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0144",
+      "word": "sheep",
+      "accept": [
+        "sheep"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a farm animal that grows wool"
+      ],
+      "sentence": "The sheep crowded under the oak.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ee"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0145",
+      "word": "read",
+      "accept": [
+        "read"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to look at writing and understand it"
+      ],
+      "sentence": "I read a chapter before lights-out.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "reed"
+      ],
+      "tags": [
+        "vowel-team",
+        "ea"
+      ],
+      "reviewed": false,
+      "audio": {
+        "sayAs": "reed",
+        "file": null
+      }
+    },
+    {
+      "id": "g0146",
+      "word": "team",
+      "accept": [
+        "team"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a group that works or plays together"
+      ],
+      "sentence": "Our team won the sack race.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ea"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0147",
+      "word": "leaf",
+      "accept": [
+        "leaf"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "one flat green part of a plant"
+      ],
+      "sentence": "A leaf drifted onto the calm water.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ea"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0148",
+      "word": "beach",
+      "accept": [
+        "beach"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sandy shore beside water"
+      ],
+      "sentence": "We built a fort at the beach.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ea"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0149",
+      "word": "seat",
+      "accept": [
+        "seat"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a place to rest while riding or watching"
+      ],
+      "sentence": "He saved her a seat in the canoe.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ea"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0150",
+      "word": "dream",
+      "accept": [
+        "dream"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "pictures your mind makes while you sleep"
+      ],
+      "sentence": "She had a dream about flying over the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ea"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0151",
+      "word": "boat",
+      "accept": [
+        "boat"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a craft that travels on water"
+      ],
+      "sentence": "The boat bumped gently against the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oa"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0152",
+      "word": "road",
+      "accept": [
+        "road"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a way for cars and bikes to travel"
+      ],
+      "sentence": "The road to the lake is bumpy.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oa"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0153",
+      "word": "goat",
+      "accept": [
+        "goat"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a horned farm animal that climbs and chews"
+      ],
+      "sentence": "The goat nibbled my sleeve.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oa"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0154",
+      "word": "soap",
+      "accept": [
+        "soap"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a bar you rub with water to get clean"
+      ],
+      "sentence": "The soap slipped into the sink.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oa"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0155",
+      "word": "coat",
+      "accept": [
+        "coat"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a warm piece of clothing for outdoors"
+      ],
+      "sentence": "He zipped his coat before the ride.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oa"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0156",
+      "word": "snow",
+      "accept": [
+        "snow"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "soft white flakes that fall in cold weather"
+      ],
+      "sentence": "Fresh snow covered the trail.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ow"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0157",
+      "word": "moon",
+      "accept": [
+        "moon"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the bright body you see in the night sky"
+      ],
+      "sentence": "The moon lit the way to the tent.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oo"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0158",
+      "word": "food",
+      "accept": [
+        "food"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "what people and animals eat"
+      ],
+      "sentence": "We packed food for the long ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oo"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0159",
+      "word": "boot",
+      "accept": [
+        "boot"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sturdy shoe that covers the ankle"
+      ],
+      "sentence": "Mud stuck to his boot.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oo"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0160",
+      "word": "zoo",
+      "accept": [
+        "zoo"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a park where animals are kept for visitors to see"
+      ],
+      "sentence": "The zoo has a new otter exhibit.",
+      "origin": "Greek",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oo"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0161",
+      "word": "book",
+      "accept": [
+        "book"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a set of written pages bound together"
+      ],
+      "sentence": "She packed a book for the rainy afternoon.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oo"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0162",
+      "word": "look",
+      "accept": [
+        "look"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to aim your eyes at something"
+      ],
+      "sentence": "Look at the eagle over the ridge.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oo"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0163",
+      "word": "out",
+      "accept": [
+        "out"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "into the open, or no longer inside"
+      ],
+      "sentence": "The stars came out after the storm.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ou"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0164",
+      "word": "loud",
+      "accept": [
+        "loud"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "making a lot of sound"
+      ],
+      "sentence": "The thunder was loud over the hills.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ou"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0165",
+      "word": "cloud",
+      "accept": [
+        "cloud"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a white or gray mass floating in the sky"
+      ],
+      "sentence": "A dark cloud hid the daylight.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "ou"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0166",
+      "word": "coin",
+      "accept": [
+        "coin"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small round piece of metal money"
+      ],
+      "sentence": "He found a coin under the bench.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oi"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0167",
+      "word": "boy",
+      "accept": [
+        "boy"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a male child"
+      ],
+      "sentence": "The boy baited his own hook.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oy"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0168",
+      "word": "toy",
+      "accept": [
+        "toy"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an object a child plays with"
+      ],
+      "sentence": "The toy duck bobbed in the washtub.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "vowel-team",
+        "oy"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0169",
+      "word": "car",
+      "accept": [
+        "car"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a machine with four wheels that people drive"
+      ],
+      "sentence": "We loaded the rods into the car.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0170",
+      "word": "farm",
+      "accept": [
+        "farm"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "land where crops grow and animals are raised"
+      ],
+      "sentence": "The farm has a pond full of ducks.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0171",
+      "word": "park",
+      "accept": [
+        "park"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a public place with grass, trees, and paths"
+      ],
+      "sentence": "We fly kites at the park.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0172",
+      "word": "card",
+      "accept": [
+        "card"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a stiff piece of paper with a message or a picture"
+      ],
+      "sentence": "She made a card for her coach.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0173",
+      "word": "arm",
+      "accept": [
+        "arm"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the limb from your shoulder to your hand"
+      ],
+      "sentence": "He raised an arm to signal the bend.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0174",
+      "word": "jar",
+      "accept": [
+        "jar"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a glass container with a lid"
+      ],
+      "sentence": "Lightning bugs glowed in the jar.",
+      "origin": "Latin",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0175",
+      "word": "barn",
+      "accept": [
+        "barn"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a farm building for animals or hay"
+      ],
+      "sentence": "The bikes stay in the barn overnight.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0176",
+      "word": "yard",
+      "accept": [
+        "yard"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the ground around a house"
+      ],
+      "sentence": "We played catch in the yard.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0177",
+      "word": "her",
+      "accept": [
+        "her"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "determiner",
+      "definitions": [
+        "belonging to a girl or a woman"
+      ],
+      "sentence": "Her helmet is the bright orange one.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "er"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0178",
+      "word": "fern",
+      "accept": [
+        "fern"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a plant with feathery fronds"
+      ],
+      "sentence": "A fern grew in the shady ditch.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "er"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0179",
+      "word": "herd",
+      "accept": [
+        "herd"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a group of animals that stay together"
+      ],
+      "sentence": "The herd moved toward the creek.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "er"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0180",
+      "word": "germ",
+      "accept": [
+        "germ"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tiny living thing that can make you ill"
+      ],
+      "sentence": "Wash up so a germ does not spread.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "er"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0181",
+      "word": "perk",
+      "accept": [
+        "perk"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a nice extra that comes with something"
+      ],
+      "sentence": "A perk of camp is the nightly cocoa.",
+      "origin": "Latin",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "er"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0182",
+      "word": "term",
+      "accept": [
+        "term"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a word with a special meaning"
+      ],
+      "sentence": "Orbit is a science term.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "er"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0183",
+      "word": "bird",
+      "accept": [
+        "bird"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an animal with feathers and a beak"
+      ],
+      "sentence": "A bird sang from the pine.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ir"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0184",
+      "word": "girl",
+      "accept": [
+        "girl"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a female child"
+      ],
+      "sentence": "The girl landed a sunny trout.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ir"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0185",
+      "word": "shirt",
+      "accept": [
+        "shirt"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "clothing for the top of your body"
+      ],
+      "sentence": "His shirt got splashed at the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ir"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0186",
+      "word": "first",
+      "accept": [
+        "first"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "coming before all the others"
+      ],
+      "sentence": "She was first to spot the heron.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ir"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0187",
+      "word": "stir",
+      "accept": [
+        "stir"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to mix by moving a spoon around"
+      ],
+      "sentence": "Stir the cocoa until it is smooth.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ir"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0188",
+      "word": "swirl",
+      "accept": [
+        "swirl"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to move in a spinning curve"
+      ],
+      "sentence": "Leaves swirl in the creek.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ir"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0189",
+      "word": "corn",
+      "accept": [
+        "corn"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tall plant with yellow kernels on a cob"
+      ],
+      "sentence": "We grilled corn beside the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "or"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0190",
+      "word": "fork",
+      "accept": [
+        "fork"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a tool with points for lifting food"
+      ],
+      "sentence": "He dropped a fork in the grass.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "or"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0191",
+      "word": "horn",
+      "accept": [
+        "horn"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a hard pointed growth on an animal's head"
+      ],
+      "sentence": "The goat's horn tapped the fence.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "or"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0192",
+      "word": "sport",
+      "accept": [
+        "sport"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a physical game with rules"
+      ],
+      "sentence": "Soccer is her favorite sport.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "or"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0193",
+      "word": "short",
+      "accept": [
+        "short"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "not long, or not tall"
+      ],
+      "sentence": "The trail loop is short but steep.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "or"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0194",
+      "word": "porch",
+      "accept": [
+        "porch"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a covered platform at the entrance of a building"
+      ],
+      "sentence": "We sat on the porch and watched the rain.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "or"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0195",
+      "word": "turn",
+      "accept": [
+        "turn"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to change the way you are going"
+      ],
+      "sentence": "Turn left at the big boulder.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ur"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0196",
+      "word": "burn",
+      "accept": [
+        "burn"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to be damaged by heat or flame"
+      ],
+      "sentence": "Do not burn the marshmallow.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ur"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0197",
+      "word": "curl",
+      "accept": [
+        "curl"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to bend into a round shape"
+      ],
+      "sentence": "The kitten likes to curl on the blanket.",
+      "origin": "Dutch",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ur"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0198",
+      "word": "surf",
+      "accept": [
+        "surf"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to ride waves while standing on a board"
+      ],
+      "sentence": "They surf on the small bay waves.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ur"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0199",
+      "word": "fur",
+      "accept": [
+        "fur"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the thick soft hair on an animal"
+      ],
+      "sentence": "The otter's fur looked sleek.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ur"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0200",
+      "word": "burst",
+      "accept": [
+        "burst"
+      ],
+      "difficulty": 2,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to break open suddenly"
+      ],
+      "sentence": "The seed pod began to burst.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "r-controlled",
+        "ur"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0201",
+      "word": "jumped",
+      "accept": [
+        "jumped"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "pushed off the ground with both feet"
+      ],
+      "sentence": "The frog jumped off the lily pad.",
+      "origin": "Germanic",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0202",
+      "word": "planted",
+      "accept": [
+        "planted"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "put a seedling into the soil"
+      ],
+      "sentence": "We planted peas beside the porch.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0203",
+      "word": "wished",
+      "accept": [
+        "wished"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "hoped for something"
+      ],
+      "sentence": "She wished for a calm morning on the water.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0204",
+      "word": "baked",
+      "accept": [
+        "baked"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "cooked in an oven"
+      ],
+      "sentence": "Grandma baked berry muffins.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0205",
+      "word": "cleaned",
+      "accept": [
+        "cleaned"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "made something free of dirt"
+      ],
+      "sentence": "He cleaned the muddy chain.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0206",
+      "word": "called",
+      "accept": [
+        "called"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "shouted so someone would notice"
+      ],
+      "sentence": "Mom called us in when the sky darkened.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0207",
+      "word": "started",
+      "accept": [
+        "started"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "began an activity"
+      ],
+      "sentence": "We started the ride at the barn.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0208",
+      "word": "helped",
+      "accept": [
+        "helped"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "gave aid so a job was easier"
+      ],
+      "sentence": "He helped his sister buckle the helmet.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0209",
+      "word": "looked",
+      "accept": [
+        "looked"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "aimed the eyes at something"
+      ],
+      "sentence": "She looked under the dock for crayfish.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0210",
+      "word": "played",
+      "accept": [
+        "played"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "took part in a game"
+      ],
+      "sentence": "They played checkers on the picnic table.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0211",
+      "word": "camped",
+      "accept": [
+        "camped"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "slept outdoors in a tent"
+      ],
+      "sentence": "We camped beside a quiet creek.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0212",
+      "word": "fished",
+      "accept": [
+        "fished"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "tried to catch a trout with a line"
+      ],
+      "sentence": "We fished from the dock until dusk.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0213",
+      "word": "running",
+      "accept": [
+        "running"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "moving quickly on foot"
+      ],
+      "sentence": "The dog is running beside the bike.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0214",
+      "word": "sitting",
+      "accept": [
+        "sitting"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "resting on a seat or on the ground"
+      ],
+      "sentence": "We are sitting on the warm dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0215",
+      "word": "making",
+      "accept": [
+        "making"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "creating or putting something together"
+      ],
+      "sentence": "She is making a sandwich for the ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0216",
+      "word": "hoping",
+      "accept": [
+        "hoping"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "wishing for a good result"
+      ],
+      "sentence": "He is hoping the clouds stay away.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0217",
+      "word": "fishing",
+      "accept": [
+        "fishing"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "trying to catch a trout with a line"
+      ],
+      "sentence": "They are fishing before breakfast.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0218",
+      "word": "biking",
+      "accept": [
+        "biking"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "riding a two-wheeled pedal machine"
+      ],
+      "sentence": "Biking to the lake is the best part of Saturday.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0219",
+      "word": "reading",
+      "accept": [
+        "reading"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "looking at writing and understanding it"
+      ],
+      "sentence": "She is reading under the oak.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0220",
+      "word": "playing",
+      "accept": [
+        "playing"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "taking part in a game"
+      ],
+      "sentence": "The kids are playing tag by the barn.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0221",
+      "word": "jumping",
+      "accept": [
+        "jumping"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "pushing off the ground with the feet"
+      ],
+      "sentence": "The frog is jumping from pad to pad.",
+      "origin": "Germanic",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0222",
+      "word": "sleeping",
+      "accept": [
+        "sleeping"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "resting with eyes closed"
+      ],
+      "sentence": "The pup is sleeping in a patch of shade.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0223",
+      "word": "drawing",
+      "accept": [
+        "drawing"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "making a picture with a pencil or crayon"
+      ],
+      "sentence": "He is drawing the heron he saw.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0224",
+      "word": "camping",
+      "accept": [
+        "camping"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "staying outdoors overnight in a tent"
+      ],
+      "sentence": "We are camping near the waterfall.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "ing"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0225",
+      "word": "boxes",
+      "accept": [
+        "boxes"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "containers with flat sides and a lid"
+      ],
+      "sentence": "The crayons are in two boxes.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0226",
+      "word": "dishes",
+      "accept": [
+        "dishes"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "plates and bowls used for a meal"
+      ],
+      "sentence": "We rinsed the dishes at the camp sink.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0227",
+      "word": "babies",
+      "accept": [
+        "babies"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "very young people who still need carrying"
+      ],
+      "sentence": "The babies napped during the car ride.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0228",
+      "word": "ponies",
+      "accept": [
+        "ponies"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "small horses"
+      ],
+      "sentence": "Two ponies grazed by the fence.",
+      "origin": "Scots",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0229",
+      "word": "leaves",
+      "accept": [
+        "leaves"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "the flat green parts of a plant"
+      ],
+      "sentence": "Orange leaves covered the trail.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0230",
+      "word": "wolves",
+      "accept": [
+        "wolves"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "wild animals that howl and hunt in a group"
+      ],
+      "sentence": "The tale told of wolves on a snowy ridge.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0231",
+      "word": "buses",
+      "accept": [
+        "buses"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "long vehicles that carry many riders"
+      ],
+      "sentence": "Two buses waited at the trailhead.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0232",
+      "word": "dresses",
+      "accept": [
+        "dresses"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "one-piece outfits that hang from the shoulders"
+      ],
+      "sentence": "The dresses dried on a clothesline.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0233",
+      "word": "stories",
+      "accept": [
+        "stories"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "tales you tell or find in a book"
+      ],
+      "sentence": "Grandpa tells stories beside the campfire.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0234",
+      "word": "cherries",
+      "accept": [
+        "cherries"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "small round red fruits with pits"
+      ],
+      "sentence": "We picked cherries for the pie.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0235",
+      "word": "knives",
+      "accept": [
+        "knives"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "tools with a handle and a sharp blade"
+      ],
+      "sentence": "The pocket knives stay in the pack.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0236",
+      "word": "cities",
+      "accept": [
+        "cities"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "large towns with many buildings"
+      ],
+      "sentence": "Both cities have a river trail.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0237",
+      "word": "mice",
+      "accept": [
+        "mice"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "small rodents with long tails"
+      ],
+      "sentence": "Field mice rustled in the grass.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0238",
+      "word": "geese",
+      "accept": [
+        "geese"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "large water birds with long necks"
+      ],
+      "sentence": "The geese honked across the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0239",
+      "word": "children",
+      "accept": [
+        "children"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "young people who are not grown up"
+      ],
+      "sentence": "The children raced to the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0240",
+      "word": "women",
+      "accept": [
+        "women"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "plural noun",
+      "definitions": [
+        "adult female people"
+      ],
+      "sentence": "Two women launched the canoe.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "plural"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0241",
+      "word": "sunlight",
+      "accept": [
+        "sunlight"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the bright glow outdoors on a clear day"
+      ],
+      "sentence": "Sunlight sparkled on the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0242",
+      "word": "backpack",
+      "accept": [
+        "backpack"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a bag worn on the shoulders"
+      ],
+      "sentence": "His backpack held the snack and the map.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0243",
+      "word": "popcorn",
+      "accept": [
+        "popcorn"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "puffed kernels you eat as a snack"
+      ],
+      "sentence": "We shared popcorn during the tale.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0244",
+      "word": "firefly",
+      "accept": [
+        "firefly"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a beetle that glows at night"
+      ],
+      "sentence": "A firefly blinked over the grass.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0245",
+      "word": "raincoat",
+      "accept": [
+        "raincoat"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a waterproof jacket for wet weather"
+      ],
+      "sentence": "She packed a raincoat just in case.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0246",
+      "word": "cupcake",
+      "accept": [
+        "cupcake"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small sweet baked in a paper liner"
+      ],
+      "sentence": "He saved a cupcake for after the ride.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0247",
+      "word": "bedtime",
+      "accept": [
+        "bedtime"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the hour when you get under the covers"
+      ],
+      "sentence": "Bedtime comes after the last chapter.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0248",
+      "word": "starfish",
+      "accept": [
+        "starfish"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a sea animal with five stiff arms"
+      ],
+      "sentence": "A starfish clung to the rock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0249",
+      "word": "snowball",
+      "accept": [
+        "snowball"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a round packed lump of winter flakes"
+      ],
+      "sentence": "She tossed a snowball at the fence post.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0250",
+      "word": "bookshelf",
+      "accept": [
+        "bookshelf"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a piece of furniture that holds bound pages"
+      ],
+      "sentence": "The bookshelf wobbled when he climbed.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0251",
+      "word": "mailbox",
+      "accept": [
+        "mailbox"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a container where letters are delivered"
+      ],
+      "sentence": "The mailbox flag was up.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0252",
+      "word": "doghouse",
+      "accept": [
+        "doghouse"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small outdoor shelter for a barking pet"
+      ],
+      "sentence": "The pup sleeps in the doghouse.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0253",
+      "word": "bathtub",
+      "accept": [
+        "bathtub"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a large fixture you wash your body in"
+      ],
+      "sentence": "Rubber ducks raced in the bathtub.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0254",
+      "word": "playground",
+      "accept": [
+        "playground"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an outdoor place with swings and slides"
+      ],
+      "sentence": "The playground has a new climbing wall.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0255",
+      "word": "blueberry",
+      "accept": [
+        "blueberry"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small round blue fruit"
+      ],
+      "sentence": "She dropped a blueberry into the batter.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0256",
+      "word": "rowboat",
+      "accept": [
+        "rowboat"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small water craft moved with oars"
+      ],
+      "sentence": "The rowboat bumped the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0257",
+      "word": "sunset",
+      "accept": [
+        "sunset"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the time when daylight fades in the evening"
+      ],
+      "sentence": "The sunset turned the lake gold.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0258",
+      "word": "homework",
+      "accept": [
+        "homework"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "school tasks you finish after class"
+      ],
+      "sentence": "He finished his homework before the ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0259",
+      "word": "weekend",
+      "accept": [
+        "weekend"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "Saturday and Sunday"
+      ],
+      "sentence": "The weekend trip includes a night in the tent.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0260",
+      "word": "rainbow",
+      "accept": [
+        "rainbow"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a colored arc in the sky after a storm"
+      ],
+      "sentence": "A rainbow arched over the ridge.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "compound"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0261",
+      "word": "pair",
+      "accept": [
+        "pair"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "two things that match"
+      ],
+      "sentence": "She found a pair of dry socks.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [
+        "pear"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0262",
+      "word": "beat",
+      "accept": [
+        "beat"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to defeat someone in a game"
+      ],
+      "sentence": "We can beat the other team in the relay.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "beet"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0263",
+      "word": "hear",
+      "accept": [
+        "hear"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to take in sound with your ears"
+      ],
+      "sentence": "I hear a loon across the water.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "here"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0264",
+      "word": "their",
+      "accept": [
+        "their"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "determiner",
+      "definitions": [
+        "belonging to those people"
+      ],
+      "sentence": "Their canoe is the green one.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [
+        "there",
+        "they're"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0265",
+      "word": "night",
+      "accept": [
+        "night"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the dark hours when most people sleep"
+      ],
+      "sentence": "Owls hunt at night.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "knight"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0266",
+      "word": "flour",
+      "accept": [
+        "flour"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a powder made by grinding grain"
+      ],
+      "sentence": "We need flour for the muffins.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [
+        "flower"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0267",
+      "word": "right",
+      "accept": [
+        "right"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "toward the side opposite the left"
+      ],
+      "sentence": "Turn right at the big pine.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "write"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0268",
+      "word": "hole",
+      "accept": [
+        "hole"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an opening or an empty gap"
+      ],
+      "sentence": "A chipmunk darted into a hole.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "whole"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0269",
+      "word": "sea",
+      "accept": [
+        "sea"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "the salt water that covers most of the earth"
+      ],
+      "sentence": "The sea was too rough for kayaks.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "see"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0270",
+      "word": "week",
+      "accept": [
+        "week"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "seven days in a row"
+      ],
+      "sentence": "We visit the lake once a week.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "weak"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0271",
+      "word": "blew",
+      "accept": [
+        "blew"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "sent air moving hard"
+      ],
+      "sentence": "The gust blew his cap into the canoe.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "blue"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0272",
+      "word": "sale",
+      "accept": [
+        "sale"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a time when items cost less"
+      ],
+      "sentence": "The bait shop has a sale on worms.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "sail"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0273",
+      "word": "plain",
+      "accept": [
+        "plain"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "simple, with nothing fancy added"
+      ],
+      "sentence": "She chose the plain helmet.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [
+        "plane"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0274",
+      "word": "ant",
+      "accept": [
+        "ant"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a small insect that lives in a group"
+      ],
+      "sentence": "An ant carried a crumb across the table.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "aunt"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0275",
+      "word": "ate",
+      "accept": [
+        "ate"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "took food in, in the past"
+      ],
+      "sentence": "He ate the last muffin.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "eight"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0276",
+      "word": "son",
+      "accept": [
+        "son"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a male child of a parent"
+      ],
+      "sentence": "Their son paddled the front of the canoe.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [
+        "sun"
+      ],
+      "tags": [
+        "homophone"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0277",
+      "word": "because",
+      "accept": [
+        "because"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "conjunction",
+      "definitions": [
+        "for the reason that"
+      ],
+      "sentence": "We waited under the tarp because the thunder boomed.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0278",
+      "word": "friend",
+      "accept": [
+        "friend"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a person you like and trust"
+      ],
+      "sentence": "Her friend shared the last granola bar on the ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0279",
+      "word": "said",
+      "accept": [
+        "said"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "spoke words"
+      ],
+      "sentence": "She said the trail looked muddy.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0280",
+      "word": "they",
+      "accept": [
+        "they"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "pronoun",
+      "definitions": [
+        "the people or animals already mentioned"
+      ],
+      "sentence": "They raced to the dock.",
+      "origin": "Old Norse",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0281",
+      "word": "could",
+      "accept": [
+        "could"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "was able to"
+      ],
+      "sentence": "He could see the heron from the dock.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0282",
+      "word": "would",
+      "accept": [
+        "would"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "was willing to"
+      ],
+      "sentence": "She would share her snack.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0283",
+      "word": "should",
+      "accept": [
+        "should"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "ought to"
+      ],
+      "sentence": "You should wear a helmet on the trail.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0284",
+      "word": "again",
+      "accept": [
+        "again"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "one more time"
+      ],
+      "sentence": "The loon called again across the lake.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0285",
+      "word": "once",
+      "accept": [
+        "once"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "one single time"
+      ],
+      "sentence": "The bell rang once.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0286",
+      "word": "does",
+      "accept": [
+        "does"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "carries out an action"
+      ],
+      "sentence": "She does the baiting on her own.",
+      "origin": "Middle English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0287",
+      "word": "where",
+      "accept": [
+        "where"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "in what place"
+      ],
+      "sentence": "Where did the paddle go?",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0288",
+      "word": "were",
+      "accept": [
+        "were"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "happened or existed, for we, you, or they"
+      ],
+      "sentence": "We were ready before sunrise.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0289",
+      "word": "what",
+      "accept": [
+        "what"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "pronoun",
+      "definitions": [
+        "which thing, used when asking"
+      ],
+      "sentence": "What did you pack for lunch?",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0290",
+      "word": "who",
+      "accept": [
+        "who"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "pronoun",
+      "definitions": [
+        "which person, used when asking"
+      ],
+      "sentence": "Who wants the front of the canoe?",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0291",
+      "word": "enough",
+      "accept": [
+        "enough"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "as much as is needed"
+      ],
+      "sentence": "We have enough water for the ride.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0292",
+      "word": "through",
+      "accept": [
+        "through"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "preposition",
+      "definitions": [
+        "from one side to the other side"
+      ],
+      "sentence": "The trail goes through the pine grove.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0293",
+      "word": "thought",
+      "accept": [
+        "thought"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "an idea held in the mind"
+      ],
+      "sentence": "A sudden thought made him check the tire.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0294",
+      "word": "laugh",
+      "accept": [
+        "laugh"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to make the sound that shows something is funny"
+      ],
+      "sentence": "The joke made everyone laugh.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0295",
+      "word": "answer",
+      "accept": [
+        "answer"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "noun",
+      "definitions": [
+        "a reply to a question"
+      ],
+      "sentence": "She knew the answer on the first try.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0296",
+      "word": "busy",
+      "accept": [
+        "busy"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "having a lot to do"
+      ],
+      "sentence": "The bees looked busy around the clover.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0297",
+      "word": "know",
+      "accept": [
+        "know"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "verb",
+      "definitions": [
+        "to have a fact in your mind"
+      ],
+      "sentence": "I know the way to the waterfall.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0298",
+      "word": "two",
+      "accept": [
+        "two"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "adding up to one more than one"
+      ],
+      "sentence": "Two herons stood in the shallows.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0299",
+      "word": "often",
+      "accept": [
+        "often"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adverb",
+      "definitions": [
+        "many times"
+      ],
+      "sentence": "We often pedal to the lake after school.",
+      "origin": "Old English",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "g0300",
+      "word": "sure",
+      "accept": [
+        "sure"
+      ],
+      "difficulty": 3,
+      "partOfSpeech": "adjective",
+      "definitions": [
+        "feeling certain"
+      ],
+      "sentence": "I am sure the latch is closed.",
+      "origin": "French",
+      "originSource": "wiktionary",
+      "homophones": [],
+      "tags": [
+        "tricky"
+      ],
+      "reviewed": false
+    }
+  ]
+}

@@ -99,6 +99,17 @@ export function hasClue(word, kind) {
   }
 }
 
+/**
+ * R4: which lists a kid studies when the parent has not picked any (wordListIds empty).
+ * Practice (3rd grader) gets the lists marked grade <= 4; competition (the bee) gets the
+ * other lists (no grade, or grade >= 5). If that leaves nothing, every list is used.
+ */
+export function defaultListIds(lists, mode) {
+  const easy = (l) => l.grade != null && l.grade <= 4;
+  const pick = mode === 'practice' ? lists.filter(easy) : mode === 'competition' ? lists.filter((l) => !easy(l)) : [];
+  return (pick.length ? pick : lists).map((l) => l.id);
+}
+
 /** Merge lists into one word array for a profile; first list wins on duplicate keys. */
 export function mergeWords(lists, wordListIds = []) {
   const chosen = wordListIds?.length ? lists.filter((l) => wordListIds.includes(l.id)) : lists;

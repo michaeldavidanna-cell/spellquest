@@ -1,0 +1,3632 @@
+{
+ "schema": "spellingbee.phonics/1",
+ "version": 1,
+ "notes": "Original item set for the phonics mini-mode. Sight-word levels use the public-domain Dolch lists (pre-primer, primer). Pictures are Unicode emoji drawn by the device font.",
+ "mastery": {
+  "knownRatio": 0.8,
+  "testOut": 8
+ },
+ "levels": [
+  {
+   "id": "letter-names",
+   "title": "Letter Names",
+   "emoji": "🔤",
+   "kind": "letter-name",
+   "items": [
+    {
+     "id": "a-upper",
+     "letter": "a",
+     "case": "upper"
+    },
+    {
+     "id": "a-lower",
+     "letter": "a",
+     "case": "lower"
+    },
+    {
+     "id": "b-upper",
+     "letter": "b",
+     "case": "upper"
+    },
+    {
+     "id": "b-lower",
+     "letter": "b",
+     "case": "lower"
+    },
+    {
+     "id": "c-upper",
+     "letter": "c",
+     "case": "upper"
+    },
+    {
+     "id": "c-lower",
+     "letter": "c",
+     "case": "lower"
+    },
+    {
+     "id": "d-upper",
+     "letter": "d",
+     "case": "upper"
+    },
+    {
+     "id": "d-lower",
+     "letter": "d",
+     "case": "lower"
+    },
+    {
+     "id": "e-upper",
+     "letter": "e",
+     "case": "upper"
+    },
+    {
+     "id": "e-lower",
+     "letter": "e",
+     "case": "lower"
+    },
+    {
+     "id": "f-upper",
+     "letter": "f",
+     "case": "upper"
+    },
+    {
+     "id": "f-lower",
+     "letter": "f",
+     "case": "lower"
+    },
+    {
+     "id": "g-upper",
+     "letter": "g",
+     "case": "upper"
+    },
+    {
+     "id": "g-lower",
+     "letter": "g",
+     "case": "lower"
+    },
+    {
+     "id": "h-upper",
+     "letter": "h",
+     "case": "upper"
+    },
+    {
+     "id": "h-lower",
+     "letter": "h",
+     "case": "lower"
+    },
+    {
+     "id": "i-upper",
+     "letter": "i",
+     "case": "upper"
+    },
+    {
+     "id": "i-lower",
+     "letter": "i",
+     "case": "lower"
+    },
+    {
+     "id": "j-upper",
+     "letter": "j",
+     "case": "upper"
+    },
+    {
+     "id": "j-lower",
+     "letter": "j",
+     "case": "lower"
+    },
+    {
+     "id": "k-upper",
+     "letter": "k",
+     "case": "upper"
+    },
+    {
+     "id": "k-lower",
+     "letter": "k",
+     "case": "lower"
+    },
+    {
+     "id": "l-upper",
+     "letter": "l",
+     "case": "upper"
+    },
+    {
+     "id": "l-lower",
+     "letter": "l",
+     "case": "lower"
+    },
+    {
+     "id": "m-upper",
+     "letter": "m",
+     "case": "upper"
+    },
+    {
+     "id": "m-lower",
+     "letter": "m",
+     "case": "lower"
+    },
+    {
+     "id": "n-upper",
+     "letter": "n",
+     "case": "upper"
+    },
+    {
+     "id": "n-lower",
+     "letter": "n",
+     "case": "lower"
+    },
+    {
+     "id": "o-upper",
+     "letter": "o",
+     "case": "upper"
+    },
+    {
+     "id": "o-lower",
+     "letter": "o",
+     "case": "lower"
+    },
+    {
+     "id": "p-upper",
+     "letter": "p",
+     "case": "upper"
+    },
+    {
+     "id": "p-lower",
+     "letter": "p",
+     "case": "lower"
+    },
+    {
+     "id": "q-upper",
+     "letter": "q",
+     "case": "upper"
+    },
+    {
+     "id": "q-lower",
+     "letter": "q",
+     "case": "lower"
+    },
+    {
+     "id": "r-upper",
+     "letter": "r",
+     "case": "upper"
+    },
+    {
+     "id": "r-lower",
+     "letter": "r",
+     "case": "lower"
+    },
+    {
+     "id": "s-upper",
+     "letter": "s",
+     "case": "upper"
+    },
+    {
+     "id": "s-lower",
+     "letter": "s",
+     "case": "lower"
+    },
+    {
+     "id": "t-upper",
+     "letter": "t",
+     "case": "upper"
+    },
+    {
+     "id": "t-lower",
+     "letter": "t",
+     "case": "lower"
+    },
+    {
+     "id": "u-upper",
+     "letter": "u",
+     "case": "upper"
+    },
+    {
+     "id": "u-lower",
+     "letter": "u",
+     "case": "lower"
+    },
+    {
+     "id": "v-upper",
+     "letter": "v",
+     "case": "upper"
+    },
+    {
+     "id": "v-lower",
+     "letter": "v",
+     "case": "lower"
+    },
+    {
+     "id": "w-upper",
+     "letter": "w",
+     "case": "upper"
+    },
+    {
+     "id": "w-lower",
+     "letter": "w",
+     "case": "lower"
+    },
+    {
+     "id": "x-upper",
+     "letter": "x",
+     "case": "upper"
+    },
+    {
+     "id": "x-lower",
+     "letter": "x",
+     "case": "lower"
+    },
+    {
+     "id": "y-upper",
+     "letter": "y",
+     "case": "upper"
+    },
+    {
+     "id": "y-lower",
+     "letter": "y",
+     "case": "lower"
+    },
+    {
+     "id": "z-upper",
+     "letter": "z",
+     "case": "upper"
+    },
+    {
+     "id": "z-lower",
+     "letter": "z",
+     "case": "lower"
+    }
+   ]
+  },
+  {
+   "id": "letter-sounds",
+   "title": "Letter Sounds",
+   "emoji": "🔊",
+   "kind": "letter-sound",
+   "items": [
+    {
+     "id": "sound-a",
+     "mode": "sound",
+     "letter": "a"
+    },
+    {
+     "id": "sound-b",
+     "mode": "sound",
+     "letter": "b"
+    },
+    {
+     "id": "sound-c",
+     "mode": "sound",
+     "letter": "c"
+    },
+    {
+     "id": "sound-d",
+     "mode": "sound",
+     "letter": "d"
+    },
+    {
+     "id": "sound-e",
+     "mode": "sound",
+     "letter": "e"
+    },
+    {
+     "id": "sound-f",
+     "mode": "sound",
+     "letter": "f"
+    },
+    {
+     "id": "sound-g",
+     "mode": "sound",
+     "letter": "g"
+    },
+    {
+     "id": "sound-h",
+     "mode": "sound",
+     "letter": "h"
+    },
+    {
+     "id": "sound-i",
+     "mode": "sound",
+     "letter": "i"
+    },
+    {
+     "id": "sound-j",
+     "mode": "sound",
+     "letter": "j"
+    },
+    {
+     "id": "sound-k",
+     "mode": "sound",
+     "letter": "k"
+    },
+    {
+     "id": "sound-l",
+     "mode": "sound",
+     "letter": "l"
+    },
+    {
+     "id": "sound-m",
+     "mode": "sound",
+     "letter": "m"
+    },
+    {
+     "id": "sound-n",
+     "mode": "sound",
+     "letter": "n"
+    },
+    {
+     "id": "sound-o",
+     "mode": "sound",
+     "letter": "o"
+    },
+    {
+     "id": "sound-p",
+     "mode": "sound",
+     "letter": "p"
+    },
+    {
+     "id": "sound-q",
+     "mode": "sound",
+     "letter": "q"
+    },
+    {
+     "id": "sound-r",
+     "mode": "sound",
+     "letter": "r"
+    },
+    {
+     "id": "sound-s",
+     "mode": "sound",
+     "letter": "s"
+    },
+    {
+     "id": "sound-t",
+     "mode": "sound",
+     "letter": "t"
+    },
+    {
+     "id": "sound-u",
+     "mode": "sound",
+     "letter": "u"
+    },
+    {
+     "id": "sound-v",
+     "mode": "sound",
+     "letter": "v"
+    },
+    {
+     "id": "sound-w",
+     "mode": "sound",
+     "letter": "w"
+    },
+    {
+     "id": "sound-x",
+     "mode": "sound",
+     "letter": "x"
+    },
+    {
+     "id": "sound-y",
+     "mode": "sound",
+     "letter": "y"
+    },
+    {
+     "id": "sound-z",
+     "mode": "sound",
+     "letter": "z"
+    },
+    {
+     "id": "pic-apple",
+     "mode": "picture",
+     "letter": "a",
+     "picture": "apple",
+     "emoji": "🍎"
+    },
+    {
+     "id": "pic-ant",
+     "mode": "picture",
+     "letter": "a",
+     "picture": "ant",
+     "emoji": "🐜"
+    },
+    {
+     "id": "pic-alligator",
+     "mode": "picture",
+     "letter": "a",
+     "picture": "alligator",
+     "emoji": "🐊"
+    },
+    {
+     "id": "pic-ball",
+     "mode": "picture",
+     "letter": "b",
+     "picture": "ball",
+     "emoji": "⚽"
+    },
+    {
+     "id": "pic-bear",
+     "mode": "picture",
+     "letter": "b",
+     "picture": "bear",
+     "emoji": "🐻"
+    },
+    {
+     "id": "pic-banana",
+     "mode": "picture",
+     "letter": "b",
+     "picture": "banana",
+     "emoji": "🍌"
+    },
+    {
+     "id": "pic-cat",
+     "mode": "picture",
+     "letter": "c",
+     "picture": "cat",
+     "emoji": "🐱"
+    },
+    {
+     "id": "pic-cup",
+     "mode": "picture",
+     "letter": "c",
+     "picture": "cup",
+     "emoji": "🥤"
+    },
+    {
+     "id": "pic-car",
+     "mode": "picture",
+     "letter": "c",
+     "picture": "car",
+     "emoji": "🚗"
+    },
+    {
+     "id": "pic-dog",
+     "mode": "picture",
+     "letter": "d",
+     "picture": "dog",
+     "emoji": "🐶"
+    },
+    {
+     "id": "pic-duck",
+     "mode": "picture",
+     "letter": "d",
+     "picture": "duck",
+     "emoji": "🦆"
+    },
+    {
+     "id": "pic-drum",
+     "mode": "picture",
+     "letter": "d",
+     "picture": "drum",
+     "emoji": "🥁"
+    },
+    {
+     "id": "pic-egg",
+     "mode": "picture",
+     "letter": "e",
+     "picture": "egg",
+     "emoji": "🥚"
+    },
+    {
+     "id": "pic-elephant",
+     "mode": "picture",
+     "letter": "e",
+     "picture": "elephant",
+     "emoji": "🐘"
+    },
+    {
+     "id": "pic-fish",
+     "mode": "picture",
+     "letter": "f",
+     "picture": "fish",
+     "emoji": "🐟"
+    },
+    {
+     "id": "pic-fox",
+     "mode": "picture",
+     "letter": "f",
+     "picture": "fox",
+     "emoji": "🦊"
+    },
+    {
+     "id": "pic-frog",
+     "mode": "picture",
+     "letter": "f",
+     "picture": "frog",
+     "emoji": "🐸"
+    },
+    {
+     "id": "pic-goat",
+     "mode": "picture",
+     "letter": "g",
+     "picture": "goat",
+     "emoji": "🐐"
+    },
+    {
+     "id": "pic-gift",
+     "mode": "picture",
+     "letter": "g",
+     "picture": "gift",
+     "emoji": "🎁"
+    },
+    {
+     "id": "pic-guitar",
+     "mode": "picture",
+     "letter": "g",
+     "picture": "guitar",
+     "emoji": "🎸"
+    },
+    {
+     "id": "pic-hat",
+     "mode": "picture",
+     "letter": "h",
+     "picture": "hat",
+     "emoji": "🎩"
+    },
+    {
+     "id": "pic-horse",
+     "mode": "picture",
+     "letter": "h",
+     "picture": "horse",
+     "emoji": "🐴"
+    },
+    {
+     "id": "pic-house",
+     "mode": "picture",
+     "letter": "h",
+     "picture": "house",
+     "emoji": "🏠"
+    },
+    {
+     "id": "pic-insect",
+     "mode": "picture",
+     "letter": "i",
+     "picture": "insect",
+     "emoji": "🐞"
+    },
+    {
+     "id": "pic-juice",
+     "mode": "picture",
+     "letter": "j",
+     "picture": "juice",
+     "emoji": "🧃"
+    },
+    {
+     "id": "pic-jellyfish",
+     "mode": "picture",
+     "letter": "j",
+     "picture": "jellyfish",
+     "emoji": "🪼"
+    },
+    {
+     "id": "pic-kite",
+     "mode": "picture",
+     "letter": "k",
+     "picture": "kite",
+     "emoji": "🪁"
+    },
+    {
+     "id": "pic-key",
+     "mode": "picture",
+     "letter": "k",
+     "picture": "key",
+     "emoji": "🔑"
+    },
+    {
+     "id": "pic-kangaroo",
+     "mode": "picture",
+     "letter": "k",
+     "picture": "kangaroo",
+     "emoji": "🦘"
+    },
+    {
+     "id": "pic-leaf",
+     "mode": "picture",
+     "letter": "l",
+     "picture": "leaf",
+     "emoji": "🍃"
+    },
+    {
+     "id": "pic-lion",
+     "mode": "picture",
+     "letter": "l",
+     "picture": "lion",
+     "emoji": "🦁"
+    },
+    {
+     "id": "pic-lemon",
+     "mode": "picture",
+     "letter": "l",
+     "picture": "lemon",
+     "emoji": "🍋"
+    },
+    {
+     "id": "pic-moon",
+     "mode": "picture",
+     "letter": "m",
+     "picture": "moon",
+     "emoji": "🌙"
+    },
+    {
+     "id": "pic-monkey",
+     "mode": "picture",
+     "letter": "m",
+     "picture": "monkey",
+     "emoji": "🐒"
+    },
+    {
+     "id": "pic-milk",
+     "mode": "picture",
+     "letter": "m",
+     "picture": "milk",
+     "emoji": "🥛"
+    },
+    {
+     "id": "pic-nest",
+     "mode": "picture",
+     "letter": "n",
+     "picture": "nest",
+     "emoji": "🪺"
+    },
+    {
+     "id": "pic-nose",
+     "mode": "picture",
+     "letter": "n",
+     "picture": "nose",
+     "emoji": "👃"
+    },
+    {
+     "id": "pic-net",
+     "mode": "picture",
+     "letter": "n",
+     "picture": "net",
+     "emoji": "🥅"
+    },
+    {
+     "id": "pic-octopus",
+     "mode": "picture",
+     "letter": "o",
+     "picture": "octopus",
+     "emoji": "🐙"
+    },
+    {
+     "id": "pic-otter",
+     "mode": "picture",
+     "letter": "o",
+     "picture": "otter",
+     "emoji": "🦦"
+    },
+    {
+     "id": "pic-ox",
+     "mode": "picture",
+     "letter": "o",
+     "picture": "ox",
+     "emoji": "🐂"
+    },
+    {
+     "id": "pic-pig",
+     "mode": "picture",
+     "letter": "p",
+     "picture": "pig",
+     "emoji": "🐷"
+    },
+    {
+     "id": "pic-pizza",
+     "mode": "picture",
+     "letter": "p",
+     "picture": "pizza",
+     "emoji": "🍕"
+    },
+    {
+     "id": "pic-penguin",
+     "mode": "picture",
+     "letter": "p",
+     "picture": "penguin",
+     "emoji": "🐧"
+    },
+    {
+     "id": "pic-queen",
+     "mode": "picture",
+     "letter": "q",
+     "picture": "queen",
+     "emoji": "👑"
+    },
+    {
+     "id": "pic-rabbit",
+     "mode": "picture",
+     "letter": "r",
+     "picture": "rabbit",
+     "emoji": "🐰"
+    },
+    {
+     "id": "pic-rainbow",
+     "mode": "picture",
+     "letter": "r",
+     "picture": "rainbow",
+     "emoji": "🌈"
+    },
+    {
+     "id": "pic-robot",
+     "mode": "picture",
+     "letter": "r",
+     "picture": "robot",
+     "emoji": "🤖"
+    },
+    {
+     "id": "pic-sun",
+     "mode": "picture",
+     "letter": "s",
+     "picture": "sun",
+     "emoji": "☀️"
+    },
+    {
+     "id": "pic-snake",
+     "mode": "picture",
+     "letter": "s",
+     "picture": "snake",
+     "emoji": "🐍"
+    },
+    {
+     "id": "pic-sock",
+     "mode": "picture",
+     "letter": "s",
+     "picture": "sock",
+     "emoji": "🧦"
+    },
+    {
+     "id": "pic-tent",
+     "mode": "picture",
+     "letter": "t",
+     "picture": "tent",
+     "emoji": "⛺"
+    },
+    {
+     "id": "pic-tiger",
+     "mode": "picture",
+     "letter": "t",
+     "picture": "tiger",
+     "emoji": "🐯"
+    },
+    {
+     "id": "pic-turtle",
+     "mode": "picture",
+     "letter": "t",
+     "picture": "turtle",
+     "emoji": "🐢"
+    },
+    {
+     "id": "pic-umbrella",
+     "mode": "picture",
+     "letter": "u",
+     "picture": "umbrella",
+     "emoji": "☂️"
+    },
+    {
+     "id": "pic-up",
+     "mode": "picture",
+     "letter": "u",
+     "picture": "up",
+     "emoji": "⬆️"
+    },
+    {
+     "id": "pic-van",
+     "mode": "picture",
+     "letter": "v",
+     "picture": "van",
+     "emoji": "🚐"
+    },
+    {
+     "id": "pic-violin",
+     "mode": "picture",
+     "letter": "v",
+     "picture": "violin",
+     "emoji": "🎻"
+    },
+    {
+     "id": "pic-volcano",
+     "mode": "picture",
+     "letter": "v",
+     "picture": "volcano",
+     "emoji": "🌋"
+    },
+    {
+     "id": "pic-worm",
+     "mode": "picture",
+     "letter": "w",
+     "picture": "worm",
+     "emoji": "🪱"
+    },
+    {
+     "id": "pic-whale",
+     "mode": "picture",
+     "letter": "w",
+     "picture": "whale",
+     "emoji": "🐳"
+    },
+    {
+     "id": "pic-watermelon",
+     "mode": "picture",
+     "letter": "w",
+     "picture": "watermelon",
+     "emoji": "🍉"
+    },
+    {
+     "id": "pic-yo-yo",
+     "mode": "picture",
+     "letter": "y",
+     "picture": "yo-yo",
+     "emoji": "🪀"
+    },
+    {
+     "id": "pic-yarn",
+     "mode": "picture",
+     "letter": "y",
+     "picture": "yarn",
+     "emoji": "🧶"
+    },
+    {
+     "id": "pic-zebra",
+     "mode": "picture",
+     "letter": "z",
+     "picture": "zebra",
+     "emoji": "🦓"
+    }
+   ]
+  },
+  {
+   "id": "rhyming",
+   "title": "Rhyme Time",
+   "emoji": "🎵",
+   "kind": "rhyme",
+   "families": [
+    [
+     "cat",
+     "hat",
+     "bat",
+     "rat"
+    ],
+    [
+     "dog",
+     "frog",
+     "log"
+    ],
+    [
+     "sun",
+     "run"
+    ],
+    [
+     "bee",
+     "tree",
+     "key",
+     "three"
+    ],
+    [
+     "cake",
+     "snake",
+     "lake"
+    ],
+    [
+     "star",
+     "car",
+     "jar"
+    ],
+    [
+     "fish",
+     "dish"
+    ],
+    [
+     "moon",
+     "spoon",
+     "balloon"
+    ],
+    [
+     "bear",
+     "chair",
+     "pear"
+    ],
+    [
+     "goat",
+     "boat",
+     "coat"
+    ],
+    [
+     "ring",
+     "king",
+     "wing"
+    ],
+    [
+     "bed",
+     "sled",
+     "red"
+    ],
+    [
+     "mouse",
+     "house"
+    ],
+    [
+     "clock",
+     "sock",
+     "rock",
+     "lock"
+    ],
+    [
+     "ball",
+     "wall"
+    ],
+    [
+     "fox",
+     "box"
+    ],
+    [
+     "bug",
+     "mug",
+     "hug"
+    ],
+    [
+     "snail",
+     "mail"
+    ],
+    [
+     "train",
+     "rain",
+     "chain"
+    ],
+    [
+     "light",
+     "night",
+     "kite"
+    ],
+    [
+     "mice",
+     "rice",
+     "dice",
+     "ice"
+    ],
+    [
+     "van",
+     "fan",
+     "pan",
+     "can",
+     "man"
+    ],
+    [
+     "hen",
+     "pen",
+     "ten",
+     "men"
+    ],
+    [
+     "deer",
+     "ear"
+    ],
+    [
+     "bell",
+     "shell"
+    ],
+    [
+     "bone",
+     "phone"
+    ],
+    [
+     "pot",
+     "hot"
+    ],
+    [
+     "fly",
+     "eye",
+     "pie",
+     "tie"
+    ],
+    [
+     "snow",
+     "toe"
+    ],
+    [
+     "ship",
+     "lip",
+     "zip"
+    ],
+    [
+     "mop",
+     "hop"
+    ]
+   ],
+   "items": [
+    {
+     "id": "cat",
+     "word": "cat",
+     "emoji": "🐱",
+     "family": 0
+    },
+    {
+     "id": "hat",
+     "word": "hat",
+     "emoji": "🎩",
+     "family": 0
+    },
+    {
+     "id": "bat",
+     "word": "bat",
+     "emoji": "🦇",
+     "family": 0
+    },
+    {
+     "id": "rat",
+     "word": "rat",
+     "emoji": "🐀",
+     "family": 0
+    },
+    {
+     "id": "dog",
+     "word": "dog",
+     "emoji": "🐶",
+     "family": 1
+    },
+    {
+     "id": "frog",
+     "word": "frog",
+     "emoji": "🐸",
+     "family": 1
+    },
+    {
+     "id": "log",
+     "word": "log",
+     "emoji": "🪵",
+     "family": 1
+    },
+    {
+     "id": "sun",
+     "word": "sun",
+     "emoji": "☀️",
+     "family": 2
+    },
+    {
+     "id": "run",
+     "word": "run",
+     "emoji": "🏃",
+     "family": 2
+    },
+    {
+     "id": "bee",
+     "word": "bee",
+     "emoji": "🐝",
+     "family": 3
+    },
+    {
+     "id": "tree",
+     "word": "tree",
+     "emoji": "🌳",
+     "family": 3
+    },
+    {
+     "id": "key",
+     "word": "key",
+     "emoji": "🔑",
+     "family": 3
+    },
+    {
+     "id": "three",
+     "word": "three",
+     "emoji": "3️⃣",
+     "family": 3
+    },
+    {
+     "id": "cake",
+     "word": "cake",
+     "emoji": "🎂",
+     "family": 4
+    },
+    {
+     "id": "snake",
+     "word": "snake",
+     "emoji": "🐍",
+     "family": 4
+    },
+    {
+     "id": "lake",
+     "word": "lake",
+     "emoji": "🏞️",
+     "family": 4
+    },
+    {
+     "id": "star",
+     "word": "star",
+     "emoji": "⭐",
+     "family": 5
+    },
+    {
+     "id": "car",
+     "word": "car",
+     "emoji": "🚗",
+     "family": 5
+    },
+    {
+     "id": "jar",
+     "word": "jar",
+     "emoji": "🫙",
+     "family": 5
+    },
+    {
+     "id": "fish",
+     "word": "fish",
+     "emoji": "🐟",
+     "family": 6
+    },
+    {
+     "id": "dish",
+     "word": "dish",
+     "emoji": "🍽️",
+     "family": 6
+    },
+    {
+     "id": "moon",
+     "word": "moon",
+     "emoji": "🌙",
+     "family": 7
+    },
+    {
+     "id": "spoon",
+     "word": "spoon",
+     "emoji": "🥄",
+     "family": 7
+    },
+    {
+     "id": "balloon",
+     "word": "balloon",
+     "emoji": "🎈",
+     "family": 7
+    },
+    {
+     "id": "bear",
+     "word": "bear",
+     "emoji": "🐻",
+     "family": 8
+    },
+    {
+     "id": "chair",
+     "word": "chair",
+     "emoji": "🪑",
+     "family": 8
+    },
+    {
+     "id": "pear",
+     "word": "pear",
+     "emoji": "🍐",
+     "family": 8
+    },
+    {
+     "id": "goat",
+     "word": "goat",
+     "emoji": "🐐",
+     "family": 9
+    },
+    {
+     "id": "boat",
+     "word": "boat",
+     "emoji": "⛵",
+     "family": 9
+    },
+    {
+     "id": "coat",
+     "word": "coat",
+     "emoji": "🧥",
+     "family": 9
+    },
+    {
+     "id": "ring",
+     "word": "ring",
+     "emoji": "💍",
+     "family": 10
+    },
+    {
+     "id": "king",
+     "word": "king",
+     "emoji": "🤴",
+     "family": 10
+    },
+    {
+     "id": "wing",
+     "word": "wing",
+     "emoji": "🪽",
+     "family": 10
+    },
+    {
+     "id": "bed",
+     "word": "bed",
+     "emoji": "🛏️",
+     "family": 11
+    },
+    {
+     "id": "sled",
+     "word": "sled",
+     "emoji": "🛷",
+     "family": 11
+    },
+    {
+     "id": "red",
+     "word": "red",
+     "emoji": "🟥",
+     "family": 11
+    },
+    {
+     "id": "mouse",
+     "word": "mouse",
+     "emoji": "🐭",
+     "family": 12
+    },
+    {
+     "id": "house",
+     "word": "house",
+     "emoji": "🏠",
+     "family": 12
+    },
+    {
+     "id": "clock",
+     "word": "clock",
+     "emoji": "🕰️",
+     "family": 13
+    },
+    {
+     "id": "sock",
+     "word": "sock",
+     "emoji": "🧦",
+     "family": 13
+    },
+    {
+     "id": "rock",
+     "word": "rock",
+     "emoji": "🪨",
+     "family": 13
+    },
+    {
+     "id": "lock",
+     "word": "lock",
+     "emoji": "🔒",
+     "family": 13
+    },
+    {
+     "id": "ball",
+     "word": "ball",
+     "emoji": "⚽",
+     "family": 14
+    },
+    {
+     "id": "wall",
+     "word": "wall",
+     "emoji": "🧱",
+     "family": 14
+    },
+    {
+     "id": "fox",
+     "word": "fox",
+     "emoji": "🦊",
+     "family": 15
+    },
+    {
+     "id": "box",
+     "word": "box",
+     "emoji": "📦",
+     "family": 15
+    },
+    {
+     "id": "bug",
+     "word": "bug",
+     "emoji": "🐛",
+     "family": 16
+    },
+    {
+     "id": "mug",
+     "word": "mug",
+     "emoji": "☕",
+     "family": 16
+    },
+    {
+     "id": "hug",
+     "word": "hug",
+     "emoji": "🤗",
+     "family": 16
+    },
+    {
+     "id": "snail",
+     "word": "snail",
+     "emoji": "🐌",
+     "family": 17
+    },
+    {
+     "id": "mail",
+     "word": "mail",
+     "emoji": "📬",
+     "family": 17
+    },
+    {
+     "id": "train",
+     "word": "train",
+     "emoji": "🚆",
+     "family": 18
+    },
+    {
+     "id": "rain",
+     "word": "rain",
+     "emoji": "🌧️",
+     "family": 18
+    },
+    {
+     "id": "chain",
+     "word": "chain",
+     "emoji": "⛓️",
+     "family": 18
+    },
+    {
+     "id": "light",
+     "word": "light",
+     "emoji": "💡",
+     "family": 19
+    },
+    {
+     "id": "night",
+     "word": "night",
+     "emoji": "🌃",
+     "family": 19
+    },
+    {
+     "id": "kite",
+     "word": "kite",
+     "emoji": "🪁",
+     "family": 19
+    },
+    {
+     "id": "mice",
+     "word": "mice",
+     "emoji": "🐁",
+     "family": 20
+    },
+    {
+     "id": "rice",
+     "word": "rice",
+     "emoji": "🍚",
+     "family": 20
+    },
+    {
+     "id": "dice",
+     "word": "dice",
+     "emoji": "🎲",
+     "family": 20
+    },
+    {
+     "id": "ice",
+     "word": "ice",
+     "emoji": "🧊",
+     "family": 20
+    },
+    {
+     "id": "van",
+     "word": "van",
+     "emoji": "🚐",
+     "family": 21
+    },
+    {
+     "id": "fan",
+     "word": "fan",
+     "emoji": "🪭",
+     "family": 21
+    },
+    {
+     "id": "pan",
+     "word": "pan",
+     "emoji": "🍳",
+     "family": 21
+    },
+    {
+     "id": "can",
+     "word": "can",
+     "emoji": "🥫",
+     "family": 21
+    },
+    {
+     "id": "man",
+     "word": "man",
+     "emoji": "👨",
+     "family": 21
+    },
+    {
+     "id": "hen",
+     "word": "hen",
+     "emoji": "🐔",
+     "family": 22
+    },
+    {
+     "id": "pen",
+     "word": "pen",
+     "emoji": "🖊️",
+     "family": 22
+    },
+    {
+     "id": "ten",
+     "word": "ten",
+     "emoji": "🔟",
+     "family": 22
+    },
+    {
+     "id": "men",
+     "word": "men",
+     "emoji": "👬",
+     "family": 22
+    },
+    {
+     "id": "deer",
+     "word": "deer",
+     "emoji": "🦌",
+     "family": 23
+    },
+    {
+     "id": "ear",
+     "word": "ear",
+     "emoji": "👂",
+     "family": 23
+    },
+    {
+     "id": "bell",
+     "word": "bell",
+     "emoji": "🔔",
+     "family": 24
+    },
+    {
+     "id": "shell",
+     "word": "shell",
+     "emoji": "🐚",
+     "family": 24
+    },
+    {
+     "id": "bone",
+     "word": "bone",
+     "emoji": "🦴",
+     "family": 25
+    },
+    {
+     "id": "phone",
+     "word": "phone",
+     "emoji": "📱",
+     "family": 25
+    },
+    {
+     "id": "pot",
+     "word": "pot",
+     "emoji": "🍲",
+     "family": 26
+    },
+    {
+     "id": "hot",
+     "word": "hot",
+     "emoji": "🔥",
+     "family": 26
+    },
+    {
+     "id": "fly",
+     "word": "fly",
+     "emoji": "🪰",
+     "family": 27
+    },
+    {
+     "id": "eye",
+     "word": "eye",
+     "emoji": "👁️",
+     "family": 27
+    },
+    {
+     "id": "pie",
+     "word": "pie",
+     "emoji": "🥧",
+     "family": 27
+    },
+    {
+     "id": "tie",
+     "word": "tie",
+     "emoji": "👔",
+     "family": 27
+    },
+    {
+     "id": "snow",
+     "word": "snow",
+     "emoji": "❄️",
+     "family": 28
+    },
+    {
+     "id": "toe",
+     "word": "toe",
+     "emoji": "🦶",
+     "family": 28
+    },
+    {
+     "id": "ship",
+     "word": "ship",
+     "emoji": "🚢",
+     "family": 29
+    },
+    {
+     "id": "lip",
+     "word": "lip",
+     "emoji": "👄",
+     "family": 29
+    },
+    {
+     "id": "zip",
+     "word": "zip",
+     "emoji": "🤐",
+     "family": 29
+    },
+    {
+     "id": "mop",
+     "word": "mop",
+     "emoji": "🧹",
+     "family": 30
+    },
+    {
+     "id": "hop",
+     "word": "hop",
+     "emoji": "🐇",
+     "family": 30
+    }
+   ]
+  },
+  {
+   "id": "cvc",
+   "title": "Three-Letter Words",
+   "emoji": "🧩",
+   "kind": "build",
+   "items": [
+    {
+     "id": "cat",
+     "word": "cat",
+     "emoji": "🐱"
+    },
+    {
+     "id": "hat",
+     "word": "hat",
+     "emoji": "🎩"
+    },
+    {
+     "id": "bat",
+     "word": "bat",
+     "emoji": "🦇"
+    },
+    {
+     "id": "rat",
+     "word": "rat",
+     "emoji": "🐀"
+    },
+    {
+     "id": "mat",
+     "word": "mat"
+    },
+    {
+     "id": "sat",
+     "word": "sat"
+    },
+    {
+     "id": "pan",
+     "word": "pan",
+     "emoji": "🍳"
+    },
+    {
+     "id": "fan",
+     "word": "fan",
+     "emoji": "🪭"
+    },
+    {
+     "id": "van",
+     "word": "van",
+     "emoji": "🚐"
+    },
+    {
+     "id": "man",
+     "word": "man",
+     "emoji": "👨"
+    },
+    {
+     "id": "can",
+     "word": "can",
+     "emoji": "🥫"
+    },
+    {
+     "id": "ran",
+     "word": "ran"
+    },
+    {
+     "id": "map",
+     "word": "map",
+     "emoji": "🗺️"
+    },
+    {
+     "id": "cap",
+     "word": "cap",
+     "emoji": "🧢"
+    },
+    {
+     "id": "nap",
+     "word": "nap"
+    },
+    {
+     "id": "tap",
+     "word": "tap"
+    },
+    {
+     "id": "bag",
+     "word": "bag",
+     "emoji": "👜"
+    },
+    {
+     "id": "rag",
+     "word": "rag"
+    },
+    {
+     "id": "tag",
+     "word": "tag"
+    },
+    {
+     "id": "jam",
+     "word": "jam"
+    },
+    {
+     "id": "ham",
+     "word": "ham"
+    },
+    {
+     "id": "dad",
+     "word": "dad",
+     "emoji": "👨"
+    },
+    {
+     "id": "mad",
+     "word": "mad"
+    },
+    {
+     "id": "sad",
+     "word": "sad",
+     "emoji": "😢"
+    },
+    {
+     "id": "bad",
+     "word": "bad"
+    },
+    {
+     "id": "pad",
+     "word": "pad"
+    },
+    {
+     "id": "wag",
+     "word": "wag"
+    },
+    {
+     "id": "bed",
+     "word": "bed",
+     "emoji": "🛏️"
+    },
+    {
+     "id": "red",
+     "word": "red",
+     "emoji": "🟥"
+    },
+    {
+     "id": "fed",
+     "word": "fed"
+    },
+    {
+     "id": "hen",
+     "word": "hen",
+     "emoji": "🐔"
+    },
+    {
+     "id": "pen",
+     "word": "pen",
+     "emoji": "🖊️"
+    },
+    {
+     "id": "ten",
+     "word": "ten",
+     "emoji": "🔟"
+    },
+    {
+     "id": "men",
+     "word": "men",
+     "emoji": "👬"
+    },
+    {
+     "id": "net",
+     "word": "net",
+     "emoji": "🥅"
+    },
+    {
+     "id": "wet",
+     "word": "wet",
+     "emoji": "💦"
+    },
+    {
+     "id": "jet",
+     "word": "jet",
+     "emoji": "✈️"
+    },
+    {
+     "id": "pet",
+     "word": "pet"
+    },
+    {
+     "id": "vet",
+     "word": "vet",
+     "emoji": "🩺"
+    },
+    {
+     "id": "leg",
+     "word": "leg",
+     "emoji": "🦵"
+    },
+    {
+     "id": "peg",
+     "word": "peg"
+    },
+    {
+     "id": "beg",
+     "word": "beg"
+    },
+    {
+     "id": "web",
+     "word": "web",
+     "emoji": "🕸️"
+    },
+    {
+     "id": "pig",
+     "word": "pig",
+     "emoji": "🐷"
+    },
+    {
+     "id": "big",
+     "word": "big"
+    },
+    {
+     "id": "dig",
+     "word": "dig",
+     "emoji": "⛏️"
+    },
+    {
+     "id": "wig",
+     "word": "wig"
+    },
+    {
+     "id": "fig",
+     "word": "fig"
+    },
+    {
+     "id": "pin",
+     "word": "pin",
+     "emoji": "📌"
+    },
+    {
+     "id": "fin",
+     "word": "fin"
+    },
+    {
+     "id": "win",
+     "word": "win"
+    },
+    {
+     "id": "bin",
+     "word": "bin"
+    },
+    {
+     "id": "sit",
+     "word": "sit"
+    },
+    {
+     "id": "hit",
+     "word": "hit"
+    },
+    {
+     "id": "kit",
+     "word": "kit"
+    },
+    {
+     "id": "lip",
+     "word": "lip",
+     "emoji": "👄"
+    },
+    {
+     "id": "hip",
+     "word": "hip"
+    },
+    {
+     "id": "zip",
+     "word": "zip",
+     "emoji": "🤐"
+    },
+    {
+     "id": "tip",
+     "word": "tip"
+    },
+    {
+     "id": "six",
+     "word": "six",
+     "emoji": "6️⃣"
+    },
+    {
+     "id": "mix",
+     "word": "mix"
+    },
+    {
+     "id": "fix",
+     "word": "fix"
+    },
+    {
+     "id": "lid",
+     "word": "lid"
+    },
+    {
+     "id": "kid",
+     "word": "kid",
+     "emoji": "🧒"
+    },
+    {
+     "id": "dog",
+     "word": "dog",
+     "emoji": "🐶"
+    },
+    {
+     "id": "log",
+     "word": "log",
+     "emoji": "🪵"
+    },
+    {
+     "id": "fog",
+     "word": "fog"
+    },
+    {
+     "id": "hog",
+     "word": "hog"
+    },
+    {
+     "id": "jog",
+     "word": "jog"
+    },
+    {
+     "id": "hot",
+     "word": "hot",
+     "emoji": "🔥"
+    },
+    {
+     "id": "pot",
+     "word": "pot",
+     "emoji": "🍲"
+    },
+    {
+     "id": "dot",
+     "word": "dot"
+    },
+    {
+     "id": "cot",
+     "word": "cot"
+    },
+    {
+     "id": "top",
+     "word": "top"
+    },
+    {
+     "id": "mop",
+     "word": "mop",
+     "emoji": "🧹"
+    },
+    {
+     "id": "hop",
+     "word": "hop",
+     "emoji": "🐇"
+    },
+    {
+     "id": "pop",
+     "word": "pop"
+    },
+    {
+     "id": "box",
+     "word": "box",
+     "emoji": "📦"
+    },
+    {
+     "id": "fox",
+     "word": "fox",
+     "emoji": "🦊"
+    },
+    {
+     "id": "rod",
+     "word": "rod"
+    },
+    {
+     "id": "nod",
+     "word": "nod"
+    },
+    {
+     "id": "sun",
+     "word": "sun",
+     "emoji": "☀️"
+    },
+    {
+     "id": "run",
+     "word": "run",
+     "emoji": "🏃"
+    },
+    {
+     "id": "fun",
+     "word": "fun",
+     "emoji": "🎉"
+    },
+    {
+     "id": "bun",
+     "word": "bun"
+    },
+    {
+     "id": "bug",
+     "word": "bug",
+     "emoji": "🐛"
+    },
+    {
+     "id": "hug",
+     "word": "hug",
+     "emoji": "🤗"
+    },
+    {
+     "id": "mug",
+     "word": "mug",
+     "emoji": "☕"
+    },
+    {
+     "id": "rug",
+     "word": "rug"
+    },
+    {
+     "id": "jug",
+     "word": "jug",
+     "emoji": "🫗"
+    },
+    {
+     "id": "cup",
+     "word": "cup",
+     "emoji": "🥤"
+    },
+    {
+     "id": "pup",
+     "word": "pup",
+     "emoji": "🐶"
+    },
+    {
+     "id": "bus",
+     "word": "bus",
+     "emoji": "🚌"
+    },
+    {
+     "id": "cub",
+     "word": "cub",
+     "emoji": "🐻"
+    },
+    {
+     "id": "tub",
+     "word": "tub",
+     "emoji": "🛁"
+    },
+    {
+     "id": "rub",
+     "word": "rub"
+    },
+    {
+     "id": "mud",
+     "word": "mud"
+    },
+    {
+     "id": "nut",
+     "word": "nut",
+     "emoji": "🥜"
+    },
+    {
+     "id": "hut",
+     "word": "hut",
+     "emoji": "🛖"
+    },
+    {
+     "id": "cut",
+     "word": "cut",
+     "emoji": "✂️"
+    },
+    {
+     "id": "gum",
+     "word": "gum",
+     "emoji": "🍬"
+    }
+   ]
+  },
+  {
+   "id": "digraphs",
+   "title": "Buddy Letters: sh, ch, th",
+   "emoji": "🤝",
+   "kind": "build",
+   "items": [
+    {
+     "id": "ship",
+     "word": "ship",
+     "digraph": "sh",
+     "chunks": [
+      "sh",
+      "i",
+      "p"
+     ],
+     "emoji": "🚢"
+    },
+    {
+     "id": "shop",
+     "word": "shop",
+     "digraph": "sh",
+     "chunks": [
+      "sh",
+      "o",
+      "p"
+     ]
+    },
+    {
+     "id": "shed",
+     "word": "shed",
+     "digraph": "sh",
+     "chunks": [
+      "sh",
+      "e",
+      "d"
+     ]
+    },
+    {
+     "id": "shell",
+     "word": "shell",
+     "digraph": "sh",
+     "chunks": [
+      "sh",
+      "e",
+      "l",
+      "l"
+     ],
+     "emoji": "🐚"
+    },
+    {
+     "id": "fish",
+     "word": "fish",
+     "digraph": "sh",
+     "chunks": [
+      "f",
+      "i",
+      "sh"
+     ],
+     "emoji": "🐟"
+    },
+    {
+     "id": "dish",
+     "word": "dish",
+     "digraph": "sh",
+     "chunks": [
+      "d",
+      "i",
+      "sh"
+     ],
+     "emoji": "🍽️"
+    },
+    {
+     "id": "wish",
+     "word": "wish",
+     "digraph": "sh",
+     "chunks": [
+      "w",
+      "i",
+      "sh"
+     ]
+    },
+    {
+     "id": "cash",
+     "word": "cash",
+     "digraph": "sh",
+     "chunks": [
+      "c",
+      "a",
+      "sh"
+     ]
+    },
+    {
+     "id": "shut",
+     "word": "shut",
+     "digraph": "sh",
+     "chunks": [
+      "sh",
+      "u",
+      "t"
+     ]
+    },
+    {
+     "id": "rush",
+     "word": "rush",
+     "digraph": "sh",
+     "chunks": [
+      "r",
+      "u",
+      "sh"
+     ]
+    },
+    {
+     "id": "mash",
+     "word": "mash",
+     "digraph": "sh",
+     "chunks": [
+      "m",
+      "a",
+      "sh"
+     ]
+    },
+    {
+     "id": "chip",
+     "word": "chip",
+     "digraph": "ch",
+     "chunks": [
+      "ch",
+      "i",
+      "p"
+     ],
+     "emoji": "🍟"
+    },
+    {
+     "id": "chin",
+     "word": "chin",
+     "digraph": "ch",
+     "chunks": [
+      "ch",
+      "i",
+      "n"
+     ]
+    },
+    {
+     "id": "chop",
+     "word": "chop",
+     "digraph": "ch",
+     "chunks": [
+      "ch",
+      "o",
+      "p"
+     ]
+    },
+    {
+     "id": "chat",
+     "word": "chat",
+     "digraph": "ch",
+     "chunks": [
+      "ch",
+      "a",
+      "t"
+     ]
+    },
+    {
+     "id": "much",
+     "word": "much",
+     "digraph": "ch",
+     "chunks": [
+      "m",
+      "u",
+      "ch"
+     ]
+    },
+    {
+     "id": "rich",
+     "word": "rich",
+     "digraph": "ch",
+     "chunks": [
+      "r",
+      "i",
+      "ch"
+     ]
+    },
+    {
+     "id": "such",
+     "word": "such",
+     "digraph": "ch",
+     "chunks": [
+      "s",
+      "u",
+      "ch"
+     ]
+    },
+    {
+     "id": "lunch",
+     "word": "lunch",
+     "digraph": "ch",
+     "chunks": [
+      "l",
+      "u",
+      "n",
+      "ch"
+     ],
+     "emoji": "🍱"
+    },
+    {
+     "id": "bench",
+     "word": "bench",
+     "digraph": "ch",
+     "chunks": [
+      "b",
+      "e",
+      "n",
+      "ch"
+     ]
+    },
+    {
+     "id": "chick",
+     "word": "chick",
+     "digraph": "ch",
+     "chunks": [
+      "ch",
+      "i",
+      "c",
+      "k"
+     ],
+     "emoji": "🐤"
+    },
+    {
+     "id": "thin",
+     "word": "thin",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "i",
+      "n"
+     ]
+    },
+    {
+     "id": "thick",
+     "word": "thick",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "i",
+      "c",
+      "k"
+     ]
+    },
+    {
+     "id": "bath",
+     "word": "bath",
+     "digraph": "th",
+     "chunks": [
+      "b",
+      "a",
+      "th"
+     ],
+     "emoji": "🛁"
+    },
+    {
+     "id": "math",
+     "word": "math",
+     "digraph": "th",
+     "chunks": [
+      "m",
+      "a",
+      "th"
+     ]
+    },
+    {
+     "id": "path",
+     "word": "path",
+     "digraph": "th",
+     "chunks": [
+      "p",
+      "a",
+      "th"
+     ],
+     "emoji": "🛤️"
+    },
+    {
+     "id": "moth",
+     "word": "moth",
+     "digraph": "th",
+     "chunks": [
+      "m",
+      "o",
+      "th"
+     ],
+     "emoji": "🦋"
+    },
+    {
+     "id": "with",
+     "word": "with",
+     "digraph": "th",
+     "chunks": [
+      "w",
+      "i",
+      "th"
+     ]
+    },
+    {
+     "id": "then",
+     "word": "then",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "e",
+      "n"
+     ]
+    },
+    {
+     "id": "that",
+     "word": "that",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "a",
+      "t"
+     ]
+    },
+    {
+     "id": "this",
+     "word": "this",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "i",
+      "s"
+     ]
+    },
+    {
+     "id": "them",
+     "word": "them",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "e",
+      "m"
+     ]
+    },
+    {
+     "id": "thumb",
+     "word": "thumb",
+     "digraph": "th",
+     "chunks": [
+      "th",
+      "u",
+      "m",
+      "b"
+     ],
+     "emoji": "👍"
+    },
+    {
+     "id": "when",
+     "word": "when",
+     "digraph": "wh",
+     "chunks": [
+      "wh",
+      "e",
+      "n"
+     ]
+    },
+    {
+     "id": "whip",
+     "word": "whip",
+     "digraph": "wh",
+     "chunks": [
+      "wh",
+      "i",
+      "p"
+     ]
+    },
+    {
+     "id": "which",
+     "word": "which",
+     "digraph": "wh",
+     "chunks": [
+      "wh",
+      "i",
+      "c",
+      "h"
+     ]
+    },
+    {
+     "id": "duck",
+     "word": "duck",
+     "digraph": "ck",
+     "chunks": [
+      "d",
+      "u",
+      "ck"
+     ],
+     "emoji": "🦆"
+    },
+    {
+     "id": "sock",
+     "word": "sock",
+     "digraph": "ck",
+     "chunks": [
+      "s",
+      "o",
+      "ck"
+     ],
+     "emoji": "🧦"
+    },
+    {
+     "id": "back",
+     "word": "back",
+     "digraph": "ck",
+     "chunks": [
+      "b",
+      "a",
+      "ck"
+     ]
+    },
+    {
+     "id": "kick",
+     "word": "kick",
+     "digraph": "ck",
+     "chunks": [
+      "k",
+      "i",
+      "ck"
+     ]
+    },
+    {
+     "id": "rock",
+     "word": "rock",
+     "digraph": "ck",
+     "chunks": [
+      "r",
+      "o",
+      "ck"
+     ],
+     "emoji": "🪨"
+    },
+    {
+     "id": "neck",
+     "word": "neck",
+     "digraph": "ck",
+     "chunks": [
+      "n",
+      "e",
+      "ck"
+     ],
+     "emoji": "🦒"
+    },
+    {
+     "id": "pick",
+     "word": "pick",
+     "digraph": "ck",
+     "chunks": [
+      "p",
+      "i",
+      "ck"
+     ]
+    },
+    {
+     "id": "luck",
+     "word": "luck",
+     "digraph": "ck",
+     "chunks": [
+      "l",
+      "u",
+      "ck"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "blends",
+   "title": "Blends",
+   "emoji": "🌀",
+   "kind": "build",
+   "items": [
+    {
+     "id": "frog",
+     "word": "frog",
+     "emoji": "🐸"
+    },
+    {
+     "id": "flag",
+     "word": "flag",
+     "emoji": "🚩"
+    },
+    {
+     "id": "crab",
+     "word": "crab",
+     "emoji": "🦀"
+    },
+    {
+     "id": "drum",
+     "word": "drum",
+     "emoji": "🥁"
+    },
+    {
+     "id": "stop",
+     "word": "stop",
+     "emoji": "🛑"
+    },
+    {
+     "id": "swim",
+     "word": "swim",
+     "emoji": "🏊"
+    },
+    {
+     "id": "snap",
+     "word": "snap"
+    },
+    {
+     "id": "sled",
+     "word": "sled",
+     "emoji": "🛷"
+    },
+    {
+     "id": "spin",
+     "word": "spin"
+    },
+    {
+     "id": "plum",
+     "word": "plum",
+     "emoji": "🫐"
+    },
+    {
+     "id": "clap",
+     "word": "clap",
+     "emoji": "👏"
+    },
+    {
+     "id": "grin",
+     "word": "grin"
+    },
+    {
+     "id": "trip",
+     "word": "trip"
+    },
+    {
+     "id": "crib",
+     "word": "crib"
+    },
+    {
+     "id": "flip",
+     "word": "flip"
+    },
+    {
+     "id": "slip",
+     "word": "slip"
+    },
+    {
+     "id": "step",
+     "word": "step"
+    },
+    {
+     "id": "skip",
+     "word": "skip"
+    },
+    {
+     "id": "spot",
+     "word": "spot"
+    },
+    {
+     "id": "plan",
+     "word": "plan"
+    },
+    {
+     "id": "glad",
+     "word": "glad"
+    },
+    {
+     "id": "nest",
+     "word": "nest",
+     "emoji": "🪺"
+    },
+    {
+     "id": "best",
+     "word": "best"
+    },
+    {
+     "id": "hand",
+     "word": "hand",
+     "emoji": "✋"
+    },
+    {
+     "id": "lamp",
+     "word": "lamp",
+     "emoji": "🪔"
+    },
+    {
+     "id": "jump",
+     "word": "jump"
+    },
+    {
+     "id": "milk",
+     "word": "milk",
+     "emoji": "🥛"
+    },
+    {
+     "id": "gift",
+     "word": "gift",
+     "emoji": "🎁"
+    },
+    {
+     "id": "tent",
+     "word": "tent",
+     "emoji": "⛺"
+    },
+    {
+     "id": "belt",
+     "word": "belt"
+    },
+    {
+     "id": "fast",
+     "word": "fast"
+    },
+    {
+     "id": "mask",
+     "word": "mask",
+     "emoji": "🎭"
+    },
+    {
+     "id": "desk",
+     "word": "desk"
+    },
+    {
+     "id": "pond",
+     "word": "pond"
+    },
+    {
+     "id": "soft",
+     "word": "soft"
+    },
+    {
+     "id": "list",
+     "word": "list"
+    },
+    {
+     "id": "camp",
+     "word": "camp"
+    },
+    {
+     "id": "stem",
+     "word": "stem"
+    },
+    {
+     "id": "snack",
+     "word": "snack",
+     "emoji": "🍪"
+    },
+    {
+     "id": "grab",
+     "word": "grab"
+    },
+    {
+     "id": "drop",
+     "word": "drop",
+     "emoji": "💧"
+    },
+    {
+     "id": "trap",
+     "word": "trap"
+    },
+    {
+     "id": "plug",
+     "word": "plug"
+    },
+    {
+     "id": "slug",
+     "word": "slug"
+    },
+    {
+     "id": "drip",
+     "word": "drip"
+    },
+    {
+     "id": "from",
+     "word": "from"
+    },
+    {
+     "id": "twin",
+     "word": "twin"
+    },
+    {
+     "id": "swam",
+     "word": "swam"
+    },
+    {
+     "id": "brick",
+     "word": "brick"
+    },
+    {
+     "id": "plant",
+     "word": "plant",
+     "emoji": "🪴"
+    },
+    {
+     "id": "smell",
+     "word": "smell"
+    },
+    {
+     "id": "spill",
+     "word": "spill"
+    },
+    {
+     "id": "dress",
+     "word": "dress"
+    },
+    {
+     "id": "grass",
+     "word": "grass"
+    },
+    {
+     "id": "black",
+     "word": "black"
+    },
+    {
+     "id": "sleep",
+     "word": "sleep"
+    },
+    {
+     "id": "green",
+     "word": "green"
+    },
+    {
+     "id": "tree",
+     "word": "tree",
+     "emoji": "🌳"
+    }
+   ]
+  },
+  {
+   "id": "sight-preprimer",
+   "title": "Sight Words 1",
+   "emoji": "👀",
+   "kind": "sight",
+   "source": "Dolch pre-primer",
+   "items": [
+    {
+     "id": "a",
+     "word": "a"
+    },
+    {
+     "id": "and",
+     "word": "and"
+    },
+    {
+     "id": "away",
+     "word": "away"
+    },
+    {
+     "id": "big",
+     "word": "big"
+    },
+    {
+     "id": "blue",
+     "word": "blue"
+    },
+    {
+     "id": "can",
+     "word": "can"
+    },
+    {
+     "id": "come",
+     "word": "come"
+    },
+    {
+     "id": "down",
+     "word": "down"
+    },
+    {
+     "id": "find",
+     "word": "find"
+    },
+    {
+     "id": "for",
+     "word": "for"
+    },
+    {
+     "id": "funny",
+     "word": "funny"
+    },
+    {
+     "id": "go",
+     "word": "go"
+    },
+    {
+     "id": "help",
+     "word": "help"
+    },
+    {
+     "id": "here",
+     "word": "here"
+    },
+    {
+     "id": "i",
+     "word": "I"
+    },
+    {
+     "id": "in",
+     "word": "in"
+    },
+    {
+     "id": "is",
+     "word": "is"
+    },
+    {
+     "id": "it",
+     "word": "it"
+    },
+    {
+     "id": "jump",
+     "word": "jump"
+    },
+    {
+     "id": "little",
+     "word": "little"
+    },
+    {
+     "id": "look",
+     "word": "look"
+    },
+    {
+     "id": "make",
+     "word": "make"
+    },
+    {
+     "id": "me",
+     "word": "me"
+    },
+    {
+     "id": "my",
+     "word": "my"
+    },
+    {
+     "id": "not",
+     "word": "not"
+    },
+    {
+     "id": "one",
+     "word": "one"
+    },
+    {
+     "id": "play",
+     "word": "play"
+    },
+    {
+     "id": "red",
+     "word": "red"
+    },
+    {
+     "id": "run",
+     "word": "run"
+    },
+    {
+     "id": "said",
+     "word": "said"
+    },
+    {
+     "id": "see",
+     "word": "see"
+    },
+    {
+     "id": "the",
+     "word": "the"
+    },
+    {
+     "id": "three",
+     "word": "three"
+    },
+    {
+     "id": "to",
+     "word": "to"
+    },
+    {
+     "id": "two",
+     "word": "two"
+    },
+    {
+     "id": "up",
+     "word": "up"
+    },
+    {
+     "id": "we",
+     "word": "we"
+    },
+    {
+     "id": "where",
+     "word": "where"
+    },
+    {
+     "id": "yellow",
+     "word": "yellow"
+    },
+    {
+     "id": "you",
+     "word": "you"
+    }
+   ]
+  },
+  {
+   "id": "sight-primer",
+   "title": "Sight Words 2",
+   "emoji": "🌟",
+   "kind": "sight",
+   "source": "Dolch primer",
+   "items": [
+    {
+     "id": "all",
+     "word": "all"
+    },
+    {
+     "id": "am",
+     "word": "am"
+    },
+    {
+     "id": "are",
+     "word": "are"
+    },
+    {
+     "id": "at",
+     "word": "at"
+    },
+    {
+     "id": "ate",
+     "word": "ate"
+    },
+    {
+     "id": "be",
+     "word": "be"
+    },
+    {
+     "id": "black",
+     "word": "black"
+    },
+    {
+     "id": "brown",
+     "word": "brown"
+    },
+    {
+     "id": "but",
+     "word": "but"
+    },
+    {
+     "id": "came",
+     "word": "came"
+    },
+    {
+     "id": "did",
+     "word": "did"
+    },
+    {
+     "id": "do",
+     "word": "do"
+    },
+    {
+     "id": "eat",
+     "word": "eat"
+    },
+    {
+     "id": "four",
+     "word": "four"
+    },
+    {
+     "id": "get",
+     "word": "get"
+    },
+    {
+     "id": "good",
+     "word": "good"
+    },
+    {
+     "id": "have",
+     "word": "have"
+    },
+    {
+     "id": "he",
+     "word": "he"
+    },
+    {
+     "id": "into",
+     "word": "into"
+    },
+    {
+     "id": "like",
+     "word": "like"
+    },
+    {
+     "id": "must",
+     "word": "must"
+    },
+    {
+     "id": "new",
+     "word": "new"
+    },
+    {
+     "id": "no",
+     "word": "no"
+    },
+    {
+     "id": "now",
+     "word": "now"
+    },
+    {
+     "id": "on",
+     "word": "on"
+    },
+    {
+     "id": "our",
+     "word": "our"
+    },
+    {
+     "id": "out",
+     "word": "out"
+    },
+    {
+     "id": "please",
+     "word": "please"
+    },
+    {
+     "id": "pretty",
+     "word": "pretty"
+    },
+    {
+     "id": "ran",
+     "word": "ran"
+    },
+    {
+     "id": "ride",
+     "word": "ride"
+    },
+    {
+     "id": "saw",
+     "word": "saw"
+    },
+    {
+     "id": "say",
+     "word": "say"
+    },
+    {
+     "id": "she",
+     "word": "she"
+    },
+    {
+     "id": "so",
+     "word": "so"
+    },
+    {
+     "id": "soon",
+     "word": "soon"
+    },
+    {
+     "id": "that",
+     "word": "that"
+    },
+    {
+     "id": "there",
+     "word": "there"
+    },
+    {
+     "id": "they",
+     "word": "they"
+    },
+    {
+     "id": "this",
+     "word": "this"
+    },
+    {
+     "id": "too",
+     "word": "too"
+    },
+    {
+     "id": "under",
+     "word": "under"
+    },
+    {
+     "id": "want",
+     "word": "want"
+    },
+    {
+     "id": "was",
+     "word": "was"
+    },
+    {
+     "id": "well",
+     "word": "well"
+    },
+    {
+     "id": "went",
+     "word": "went"
+    },
+    {
+     "id": "what",
+     "word": "what"
+    },
+    {
+     "id": "white",
+     "word": "white"
+    },
+    {
+     "id": "who",
+     "word": "who"
+    },
+    {
+     "id": "will",
+     "word": "will"
+    },
+    {
+     "id": "with",
+     "word": "with"
+    },
+    {
+     "id": "yes",
+     "word": "yes"
+    }
+   ]
+  },
+  {
+   "id": "phrases",
+   "title": "Two-Word Spelling",
+   "emoji": "✏️",
+   "kind": "phrase",
+   "items": [
+    {
+     "id": "a-cat",
+     "phrase": "a cat",
+     "words": [
+      "a",
+      "cat"
+     ],
+     "emoji": "🐱"
+    },
+    {
+     "id": "big-dog",
+     "phrase": "big dog",
+     "words": [
+      "big",
+      "dog"
+     ],
+     "emoji": "🐶"
+    },
+    {
+     "id": "red-hat",
+     "phrase": "red hat",
+     "words": [
+      "red",
+      "hat"
+     ],
+     "emoji": "🎩"
+    },
+    {
+     "id": "the-sun",
+     "phrase": "the sun",
+     "words": [
+      "the",
+      "sun"
+     ],
+     "emoji": "☀️"
+    },
+    {
+     "id": "my-bed",
+     "phrase": "my bed",
+     "words": [
+      "my",
+      "bed"
+     ],
+     "emoji": "🛏️"
+    },
+    {
+     "id": "hot-pot",
+     "phrase": "hot pot",
+     "words": [
+      "hot",
+      "pot"
+     ],
+     "emoji": "🍲"
+    },
+    {
+     "id": "wet-dog",
+     "phrase": "wet dog",
+     "words": [
+      "wet",
+      "dog"
+     ],
+     "emoji": "🐶"
+    },
+    {
+     "id": "big-pig",
+     "phrase": "big pig",
+     "words": [
+      "big",
+      "pig"
+     ],
+     "emoji": "🐷"
+    },
+    {
+     "id": "red-bug",
+     "phrase": "red bug",
+     "words": [
+      "red",
+      "bug"
+     ],
+     "emoji": "🐛"
+    },
+    {
+     "id": "hop-up",
+     "phrase": "hop up",
+     "words": [
+      "hop",
+      "up"
+     ],
+     "emoji": "⬆️"
+    },
+    {
+     "id": "go-up",
+     "phrase": "go up",
+     "words": [
+      "go",
+      "up"
+     ],
+     "emoji": "⬆️"
+    },
+    {
+     "id": "run-fast",
+     "phrase": "run fast",
+     "words": [
+      "run",
+      "fast"
+     ],
+     "emoji": "🏃"
+    },
+    {
+     "id": "i-can",
+     "phrase": "I can",
+     "words": [
+      "I",
+      "can"
+     ],
+     "emoji": "🥫"
+    },
+    {
+     "id": "we-go",
+     "phrase": "we go",
+     "words": [
+      "we",
+      "go"
+     ]
+    },
+    {
+     "id": "see-me",
+     "phrase": "see me",
+     "words": [
+      "see",
+      "me"
+     ]
+    },
+    {
+     "id": "my-cup",
+     "phrase": "my cup",
+     "words": [
+      "my",
+      "cup"
+     ],
+     "emoji": "🥤"
+    },
+    {
+     "id": "big-box",
+     "phrase": "big box",
+     "words": [
+      "big",
+      "box"
+     ],
+     "emoji": "📦"
+    },
+    {
+     "id": "ten-hens",
+     "phrase": "ten hens",
+     "words": [
+      "ten",
+      "hens"
+     ],
+     "emoji": "🔟"
+    },
+    {
+     "id": "a-fox",
+     "phrase": "a fox",
+     "words": [
+      "a",
+      "fox"
+     ],
+     "emoji": "🦊"
+    },
+    {
+     "id": "the-bus",
+     "phrase": "the bus",
+     "words": [
+      "the",
+      "bus"
+     ],
+     "emoji": "🚌"
+    },
+    {
+     "id": "red-van",
+     "phrase": "red van",
+     "words": [
+      "red",
+      "van"
+     ],
+     "emoji": "🚐"
+    },
+    {
+     "id": "sad-cat",
+     "phrase": "sad cat",
+     "words": [
+      "sad",
+      "cat"
+     ],
+     "emoji": "🐱"
+    },
+    {
+     "id": "fun-pup",
+     "phrase": "fun pup",
+     "words": [
+      "fun",
+      "pup"
+     ],
+     "emoji": "🐶"
+    },
+    {
+     "id": "i-see",
+     "phrase": "I see",
+     "words": [
+      "I",
+      "see"
+     ]
+    },
+    {
+     "id": "look-up",
+     "phrase": "look up",
+     "words": [
+      "look",
+      "up"
+     ],
+     "emoji": "⬆️"
+    },
+    {
+     "id": "jump-up",
+     "phrase": "jump up",
+     "words": [
+      "jump",
+      "up"
+     ],
+     "emoji": "⬆️"
+    },
+    {
+     "id": "you-can",
+     "phrase": "you can",
+     "words": [
+      "you",
+      "can"
+     ],
+     "emoji": "🥫"
+    },
+    {
+     "id": "my-dog",
+     "phrase": "my dog",
+     "words": [
+      "my",
+      "dog"
+     ],
+     "emoji": "🐶"
+    },
+    {
+     "id": "it-is",
+     "phrase": "it is",
+     "words": [
+      "it",
+      "is"
+     ]
+    },
+    {
+     "id": "play-ball",
+     "phrase": "play ball",
+     "words": [
+      "play",
+      "ball"
+     ],
+     "emoji": "⚽"
+    },
+    {
+     "id": "help-me",
+     "phrase": "help me",
+     "words": [
+      "help",
+      "me"
+     ]
+    },
+    {
+     "id": "find-it",
+     "phrase": "find it",
+     "words": [
+      "find",
+      "it"
+     ]
+    },
+    {
+     "id": "make-it",
+     "phrase": "make it",
+     "words": [
+      "make",
+      "it"
+     ]
+    },
+    {
+     "id": "not-me",
+     "phrase": "not me",
+     "words": [
+      "not",
+      "me"
+     ]
+    },
+    {
+     "id": "see-you",
+     "phrase": "see you",
+     "words": [
+      "see",
+      "you"
+     ]
+    },
+    {
+     "id": "come-here",
+     "phrase": "come here",
+     "words": [
+      "come",
+      "here"
+     ]
+    },
+    {
+     "id": "go-down",
+     "phrase": "go down",
+     "words": [
+      "go",
+      "down"
+     ]
+    },
+    {
+     "id": "six-pigs",
+     "phrase": "six pigs",
+     "words": [
+      "six",
+      "pigs"
+     ],
+     "emoji": "6️⃣"
+    },
+    {
+     "id": "wet-mop",
+     "phrase": "wet mop",
+     "words": [
+      "wet",
+      "mop"
+     ],
+     "emoji": "🧹"
+    },
+    {
+     "id": "hot-sun",
+     "phrase": "hot sun",
+     "words": [
+      "hot",
+      "sun"
+     ],
+     "emoji": "☀️"
+    },
+    {
+     "id": "the-moon",
+     "phrase": "the moon",
+     "words": [
+      "the",
+      "moon"
+     ],
+     "emoji": "🌙"
+    },
+    {
+     "id": "a-fish",
+     "phrase": "a fish",
+     "words": [
+      "a",
+      "fish"
+     ],
+     "emoji": "🐟"
+    },
+    {
+     "id": "my-hat",
+     "phrase": "my hat",
+     "words": [
+      "my",
+      "hat"
+     ],
+     "emoji": "🎩"
+    },
+    {
+     "id": "big-fan",
+     "phrase": "big fan",
+     "words": [
+      "big",
+      "fan"
+     ],
+     "emoji": "🪭"
+    },
+    {
+     "id": "the-frog",
+     "phrase": "the frog",
+     "words": [
+      "the",
+      "frog"
+     ],
+     "emoji": "🐸"
+    },
+    {
+     "id": "a-duck",
+     "phrase": "a duck",
+     "words": [
+      "a",
+      "duck"
+     ],
+     "emoji": "🦆"
+    },
+    {
+     "id": "can-run",
+     "phrase": "can run",
+     "words": [
+      "can",
+      "run"
+     ],
+     "emoji": "🏃"
+    },
+    {
+     "id": "i-jump",
+     "phrase": "I jump",
+     "words": [
+      "I",
+      "jump"
+     ]
+    },
+    {
+     "id": "we-play",
+     "phrase": "we play",
+     "words": [
+      "we",
+      "play"
+     ]
+    },
+    {
+     "id": "the-box",
+     "phrase": "the box",
+     "words": [
+      "the",
+      "box"
+     ],
+     "emoji": "📦"
+    },
+    {
+     "id": "sit-down",
+     "phrase": "sit down",
+     "words": [
+      "sit",
+      "down"
+     ]
+    },
+    {
+     "id": "get-up",
+     "phrase": "get up",
+     "words": [
+      "get",
+      "up"
+     ],
+     "emoji": "⬆️"
+    },
+    {
+     "id": "my-mom",
+     "phrase": "my mom",
+     "words": [
+      "my",
+      "mom"
+     ],
+     "emoji": "👩"
+    },
+    {
+     "id": "my-dad",
+     "phrase": "my dad",
+     "words": [
+      "my",
+      "dad"
+     ],
+     "emoji": "👨"
+    }
+   ]
+  }
+ ]
+}
