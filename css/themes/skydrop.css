@@ -1,0 +1,35 @@
+/* Theme: SkyDrop Ridge — Original Cloud Glider & Sky Beacon Adventure */
+[data-theme="skydrop"] {
+  --bg: #121b2e;
+  --bg-grad: radial-gradient(circle at 80% 0%, #1f3358 0%, #121b2e 65%);
+  --surface: #1c2a45;
+  --surface-alt: #26395c;
+  --surface-raised: #223354;
+  --scene-sky: #14223b;
+  --scene-water: #38bdf8;
+  --accent: #38bdf8;
+  --accent-deep: #0284c7;
+  --accent-ink: #081524;
+  --highlight: #a78bfa;
+  --highlight-deep: #7c3aed;
+  --gold: #fbbf24;
+  --gold-soft: #3b3019;
+  --success: #34d399;
+  --success-soft: #143934;
+  --warn: #fbbf24;
+  --warn-soft: #3d3118;
+  --warn-ink: #fde68a;
+  --ink: #f1f5f9;
+  --ink-muted: #9eb4d1;
+  --border: #324a75;
+  --key-bg: #243659;
+  --key-edge: #0c1526;
+  --key-ink: #f1f5f9;
+  --slot-bg: #142038;
+  --slot-filled: #234469;
+  --coach-bg: #1e2d52;
+  --coach-border: #4d6fa8;
+  --coach-ink: #dbeafe;
+  --shadow-card: 0 10px 28px rgba(5, 10, 22, 0.45);
+  --shadow-float: 0 16px 40px rgba(3, 8, 18, 0.6);
+}

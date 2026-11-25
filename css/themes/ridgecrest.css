@@ -1,0 +1,35 @@
+/* Theme: Ridgecrest Trails — Original Mountain-Bike Trail World */
+[data-theme="ridgecrest"] {
+  --bg: #f4f1ea;
+  --bg-grad: linear-gradient(180deg, #e8e1d3 0%, #f4f1ea 60%, #ede7db 100%);
+  --surface: #ffffff;
+  --surface-alt: #e7e0d3;
+  --surface-raised: #faf7f2;
+  --scene-sky: #ddebe3;
+  --scene-water: #2e6b3e;
+  --accent: #2e6b3e;
+  --accent-deep: #1f4f2c;
+  --accent-ink: #ffffff;
+  --highlight: #c85a28;
+  --highlight-deep: #9c4119;
+  --gold: #d49012;
+  --gold-soft: #fef2d6;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --warn: #c85a28;
+  --warn-soft: #ffedd5;
+  --warn-ink: #7c2d12;
+  --ink: #1e2923;
+  --ink-muted: #556159;
+  --border: #d5ccb9;
+  --key-bg: #fffdf9;
+  --key-edge: #c7bca5;
+  --key-ink: #1e2923;
+  --slot-bg: #faf7f2;
+  --slot-filled: #e3f0e6;
+  --coach-bg: #fdf3e7;
+  --coach-border: #e9c298;
+  --coach-ink: #5c2e12;
+  --shadow-card: 0 8px 24px rgba(30, 41, 35, 0.09);
+  --shadow-float: 0 14px 36px rgba(30, 41, 35, 0.18);
+}

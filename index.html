@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pinehook">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="SpellQuest" />
+  <meta name="theme-color" content="#0f766e" id="meta-theme-color" />
+  <title>SpellQuest — iPad Spelling Bee Studio</title>
+
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png" />
+
+  <link rel="stylesheet" href="./css/themes/pinehook.css" />
+  <link rel="stylesheet" href="./css/themes/ridgecrest.css" />
+  <link rel="stylesheet" href="./css/themes/starquill.css" />
+  <link rel="stylesheet" href="./css/themes/skydrop.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+</head>
+<body>
+  <main id="app" class="app-root"></main>
+
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+  <div id="modal-root" class="modal-root" hidden></div>
+  <div id="fx-root" class="fx-root" aria-hidden="true"></div>
+
+  <noscript>
+    <div class="noscript-notice">
+      SpellQuest needs JavaScript enabled in Safari to speak words and run practice rounds offline.
+    </div>
+  </noscript>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

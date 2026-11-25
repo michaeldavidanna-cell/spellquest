@@ -1,0 +1,35 @@
+/* Theme: Starquill Academy — Original Wizard-School World */
+[data-theme="starquill"] {
+  --bg: #181a2e;
+  --bg-grad: radial-gradient(circle at 20% 0%, #2a2f57 0%, #181a2e 65%);
+  --surface: #242847;
+  --surface-alt: #30355c;
+  --surface-raised: #2b3054;
+  --scene-sky: #1a1e3a;
+  --scene-water: #4ecdc4;
+  --accent: #e8b84b;
+  --accent-deep: #be8f26;
+  --accent-ink: #181a2e;
+  --highlight: #4ecdc4;
+  --highlight-deep: #2aa39a;
+  --gold: #f6c95e;
+  --gold-soft: #3a3425;
+  --success: #4ade80;
+  --success-soft: #1b3b30;
+  --warn: #fbbf24;
+  --warn-soft: #3f331c;
+  --warn-ink: #fde68a;
+  --ink: #f7f4ea;
+  --ink-muted: #b8bdd9;
+  --border: #3d4473;
+  --key-bg: #2f345b;
+  --key-edge: #111426;
+  --key-ink: #f7f4ea;
+  --slot-bg: #1c203a;
+  --slot-filled: #343b6b;
+  --coach-bg: #2b2c4e;
+  --coach-border: #6f5d96;
+  --coach-ink: #f7e6b7;
+  --shadow-card: 0 10px 28px rgba(7, 8, 18, 0.42);
+  --shadow-float: 0 16px 40px rgba(4, 5, 14, 0.58);
+}

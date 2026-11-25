@@ -1,0 +1,36 @@
+/* Theme: Pinehook Lake — Original Lake-Fishing World (Default) */
+:root,
+[data-theme="pinehook"] {
+  --bg: #eef6f5;
+  --bg-grad: linear-gradient(180deg, #dff1ee 0%, #eef6f5 60%, #e6f2f0 100%);
+  --surface: #ffffff;
+  --surface-alt: #dcece9;
+  --surface-raised: #f7fbfa;
+  --scene-sky: #d2ebe7;
+  --scene-water: #0f766e;
+  --accent: #0f766e;
+  --accent-deep: #0a5751;
+  --accent-ink: #ffffff;
+  --highlight: #e06d44;
+  --highlight-deep: #b8502c;
+  --gold: #d9910b;
+  --gold-soft: #fff4d6;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --warn: #d97706;
+  --warn-soft: #fef3c7;
+  --warn-ink: #78350f;
+  --ink: #123033;
+  --ink-muted: #466669;
+  --border: #c1dcd7;
+  --key-bg: #ffffff;
+  --key-edge: #b0cfca;
+  --key-ink: #123033;
+  --slot-bg: #f6fbfa;
+  --slot-filled: #ddf2ee;
+  --coach-bg: #fff7e6;
+  --coach-border: #f0cf85;
+  --coach-ink: #5a3e08;
+  --shadow-card: 0 8px 24px rgba(18, 48, 51, 0.08);
+  --shadow-float: 0 14px 36px rgba(18, 48, 51, 0.16);
+}
