@@ -1,0 +1,6 @@
+.DS_Store
+# Photos of the school word list stay local
+wordlists/inbox/
+.buildteam/spikes/**/node_modules/
+# Team notes mention the family; keep them out of the public repo
+.buildteam/

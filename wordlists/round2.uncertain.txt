@@ -1,0 +1,5 @@
+No individual spelling remains unresolved after visually checking the six photos.
+
+The photos show one numbered list, not One Bee / Two Bee / Three Bee sections.
+Every entry is assigned difficulty 2 as a neutral placeholder; Mike can change
+that if he has a separate tier mapping.
