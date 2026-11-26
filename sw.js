@@ -1,11 +1,14 @@
 // Offline service worker (T2 §2): cache-first for app files, network-first for the page.
 // Bump VERSION (and VERSION in js/main.js) on every release.
-const VERSION = '0.2.1';
+const VERSION = '0.2.2';
 const CACHE = `spellingbee-${VERSION}`;
 // A1: recorded clips live in their own unversioned cache, filled on first play or by the
 // parent's "Download all audio for offline" (js/audio/clips.js). They are never precached.
 const AUDIO_CACHE = 'spellingbee-audio';
 const MEDIA = /\/audio\/.+\.(m4a|mp3|aac|wav|ogg|opus)$/i;
+// A2: audio manifests are network-first so a re-rendered voice is seen at once; clip URLs carry
+// ?v=<manifest version> and are cached by their full URL (query included).
+const AUDIO_MANIFEST = /\/audio\/[^/]+\/manifest\.json$/i;
 
 // Core files. Missing entries are skipped so screens can be added without breaking install;
 // the page also sends every file it loaded (see 'cache-urls').
@@ -149,10 +152,10 @@ async function rangeFrom(response, rangeHeader) {
 async function audioClip(request) {
   const cache = await caches.open(AUDIO_CACHE);
   const url = request.url.split('#')[0];
-  let res = await cache.match(url, { ignoreSearch: true });
+  let res = await cache.match(url); // exact URL: ?v=<version> must match, so an old voice never answers
   if (!res) {
     try {
-      const net = await fetch(url); // whole file, no Range, so it can be cached
+      const net = await fetch(url, { cache: 'no-cache' }); // whole file, no Range, so it can be cached
       if (!net.ok) return net;
       await cache.put(url, net.clone()).catch(() => {}); // storage full: still play it
       res = net;
@@ -164,12 +167,27 @@ async function audioClip(request) {
   return range ? rangeFrom(res, range) : res;
 }
 
+async function networkFirst(request) {
+  const cache = await caches.open(CACHE);
+  try {
+    const res = await Promise.race([
+      fetch(request, { cache: 'no-cache' }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 4000)),
+    ]);
+    if (res.ok) await cache.put(request.url.split('?')[0], res.clone());
+    return res;
+  } catch {
+    return (await cache.match(request.url.split('?')[0])) || new Response('', { status: 504, statusText: 'Offline' });
+  }
+}
+
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return; // the app makes no third-party requests
   if (request.mode === 'navigate') { event.respondWith(networkFirstPage(request)); return; }
+  if (AUDIO_MANIFEST.test(url.pathname)) { event.respondWith(networkFirst(request)); return; }
   if (MEDIA.test(url.pathname)) { event.respondWith(audioClip(request)); return; }
   event.respondWith(staleWhileRevalidate(event));
 });

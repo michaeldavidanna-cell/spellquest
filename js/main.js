@@ -6,7 +6,7 @@ import { getActiveProfileId, getProfile, THEMES } from './store/profiles.js';
 import { loadWordLists } from './store/wordlists.js';
 import { speech } from './audio/speech.js';
 
-export const VERSION = '0.2.1'; // keep in step with VERSION in sw.js
+export const VERSION = '0.2.2'; // keep in step with VERSION in sw.js
 
 export function isStandalone() {
   return window.matchMedia?.('(display-mode: standalone)').matches || navigator.standalone === true;
