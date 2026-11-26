@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Render local Kokoro clips for all built-in word lists; no network fallback."""
 import argparse
+from datetime import date
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -87,8 +89,13 @@ def process_list(path, pipeline, voice, overrides, overwrite, word_ids=None):
         clip_map[word["id"]] = {kind: clip["path"] for kind, clip in clips.items()}
         print(f"[{path.name}] {ix}/{total} {word['word']}", flush=True)
     total_bytes = sum(sizes.values())
+    digest = hashlib.sha256()
+    for rel in sorted(sizes):
+        digest.update(rel.encode("utf-8"))
+        digest.update((out_dir / rel).read_bytes())
+    version = f"{voice}-{date.today().isoformat()}-{digest.hexdigest()[:12]}"
     manifest = {"schema": "spellingbee.audio/1", "listId": list_id, "ext": "m4a",
-                "voice": voice, "codec": "AAC-LC", "sampleRate": 24000,
+                "voice": voice, "version": version, "codec": "AAC-LC", "sampleRate": 24000,
                 "bitrate": 40000, "channels": 1, "bytes": total_bytes,
                 "clips": clip_map, "sizes": sizes, "words": rows}
     (out_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -97,7 +104,7 @@ def process_list(path, pipeline, voice, overrides, overwrite, word_ids=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--list", action="append", help="word-list JSON filename; repeatable (default: all lists)")
-    parser.add_argument("--voice", default="af_heart")
+    parser.add_argument("--voice", default="am_michael")
     parser.add_argument("--word-id", action="append", help="render only these word ids (repeatable)")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()

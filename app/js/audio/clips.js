@@ -5,6 +5,10 @@
 // Clips are NOT precached by the service worker: each one is cached the first time it plays,
 // or all at once when a parent taps "Download all audio for offline" (downloadAllAudio).
 // Same-origin files only; nothing leaves the device.
+// A2: manifests are fetched network-first. Each manifest has a `version` (falls back to
+// `voice`); every clip URL carries ?v=<version>, so a re-rendered voice at the same paths is
+// a new URL for the service worker and Safari's HTTP cache. When the version changes, that
+// list's old clips are evicted from Cache Storage.
 
 export const AUDIO_SCHEMA = 'spellingbee.audio/1';
 export const CLIP_KINDS = ['word', 'definition', 'sentence', 'origin'];
@@ -24,6 +28,8 @@ export function parseAudioManifest(raw, listId) {
   if (raw.schema && raw.schema !== AUDIO_SCHEMA) return null;
   const ext = String(raw.ext || 'm4a').replace(/^\./, '');
   const base = new URL(`${safeSeg(listId)}/`, BASE);
+  const version = String(raw.version ?? raw.voice ?? '').trim() || null;
+  const withV = (href) => { if (!version) return href; const u = new URL(href); u.searchParams.set('v', version); return u.href; };
   const clips = new Map();
   for (const [wordId, entry] of Object.entries(raw.clips ?? {})) {
     const kinds = new Map();
@@ -33,11 +39,37 @@ export function parseAudioManifest(raw, listId) {
       : Object.entries(entry ?? {}).map(([k, file]) => [k, String(file)]);
     for (const [kind, rel] of pairs) {
       if (!CLIP_KINDS.includes(kind) || !rel || /^[a-z]+:|^\/|\.\./i.test(rel)) continue; // same-origin, inside the list folder
-      kinds.set(kind, new URL(rel, base).href);
+      kinds.set(kind, withV(new URL(rel, base).href));
     }
     if (kinds.size) clips.set(String(wordId), kinds);
   }
-  return { listId, ext, clips, bytes: Number(raw.bytes) || null, voice: raw.voice ?? null };
+  return { listId, ext, clips, bytes: Number(raw.bytes) || null, voice: raw.voice ?? null, version, base: base.href };
+}
+
+/**
+ * Cached clip URLs to delete for one list (pure; exported for tests): every cached URL inside
+ * the list's folder whose ?v= is not the manifest's current version (including old unversioned
+ * clips). Manifest files and other lists' clips are kept. A manifest without a version evicts nothing.
+ */
+export function staleClipUrls(cachedUrls, { base, version }) {
+  if (!version || !base) return [];
+  return cachedUrls.filter((href) => {
+    let u;
+    try { u = new URL(href); } catch { return false; }
+    if (!href.startsWith(base) || /\/manifest\.json$/i.test(u.pathname)) return false;
+    return u.searchParams.get('v') !== version;
+  });
+}
+
+/** Remove a list's clips that belong to an older voice/version. Returns how many were removed. */
+async function evictStale(m) {
+  if (!m?.version || typeof caches === 'undefined') return 0;
+  try {
+    const cache = await caches.open(AUDIO_CACHE);
+    const stale = staleClipUrls((await cache.keys()).map((r) => r.url), m);
+    await Promise.all(stale.map((u) => cache.delete(u)));
+    return stale.length;
+  } catch { return 0; }
 }
 
 /** Load manifests for these lists. Missing manifests are fine (speech falls back to the device voice). */
@@ -45,10 +77,13 @@ export async function loadAudioManifests(listIds) {
   await Promise.all([...new Set(listIds)].filter(Boolean).map(async (id) => {
     if (String(id).startsWith('import-')) return; // imported lists have no recordings
     try {
+      // network-first (sw.js does the same and falls back to its copy offline); no-cache skips Safari's HTTP cache
       const res = await fetch(new URL(`${safeSeg(id)}/manifest.json`, BASE), { cache: 'no-cache' });
       if (!res.ok) return;
       const m = parseAudioManifest(await res.json(), id);
-      if (m) manifests.set(id, m);
+      if (!m) return;
+      manifests.set(id, m);
+      await evictStale(m);
     } catch { /* offline with no cached manifest, or no audio yet */ }
   }));
   return [...manifests.keys()];

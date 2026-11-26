@@ -1,5 +1,17 @@
 # App core API (bee-arch)
 
+## Changed in A2 (voice switch: no stale clips)
+
+The app `VERSION` is **0.2.2** in `sw.js` and `main.js`.
+
+| # | Change | Who / what to do |
+|---|---|---|
+| 1 | Each audio manifest has a **`version`** (falls back to `voice`; no version, no `?v`). Every clip URL from `clipUrl()` is `…/<wordId>/<kind>.m4a?v=<version>`, so a re-render at the same paths is a new URL for the service worker and for Safari's HTTP cache. | **bee-eng:** change `version` on every re-render (e.g. `am_michael-2026-11-25`). Keep `voice`. Paths stay the same. |
+| 2 | Manifests are **network-first** (`sw.js`, 4 s timeout, then the cached copy offline). The page also fetches them with `cache: 'no-cache'`. | Nothing. |
+| 3 | When a list's manifest loads with a new version, that list's **older clips are evicted** from `spellingbee-audio`: any URL in the list folder whose `?v` isn't the current version, including unversioned clips from 0.2.0/0.2.1. Other lists, phonics recordings and manifests are kept. Pure helper: `staleClipUrls(cachedUrls, manifest)`. | Nothing. |
+| 4 | The SW matches clips by their **exact URL** (query included) and fetches misses with `cache: 'no-cache'`. Range requests still get a 206 cut from the cached file. | Nothing. |
+| 5 | `audioStatus()` and `downloadAllAudio()` count only the current version's URLs, so after a voice switch the Parent card shows *0 of N saved* until the parent downloads again. | **bee-ui (optional):** when `cached < total` after it was complete, say "New voice available: tap Download again." |
+
 ## Changed in A1 (clue leak, recorded audio, phonics ladder)
 
 The app `VERSION` is **0.2.0** in `sw.js` and `main.js`.

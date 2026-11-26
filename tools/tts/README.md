@@ -9,7 +9,7 @@ HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
   .buildteam/spikes/tts/.venv312/bin/python tools/tts/generate_audio.py
 ```
 
-The generator uses Kokoro 0.9.4, the locally cached Apache-2.0 `hexgrad/Kokoro-82M` weights, and the `af_heart` voice. It reads every `*.json` word list except `index.json`, and writes `app/audio/<list-id>/<word-id>/{word,definition,sentence,origin}.m4a` plus a per-list `manifest.json` using `spellingbee.audio/1`, as required by the app loader. Each manifest gives all file paths, the total byte count, and per-clip byte sizes. The generator skips existing clips, so it can resume. Remove an individual clip before regenerating it.
+The generator uses Kokoro 0.9.4, the locally cached Apache-2.0 `hexgrad/Kokoro-82M` weights, and the `am_michael` voice by default. It reads every `*.json` word list except `index.json`, and writes `app/audio/<list-id>/<word-id>/{word,definition,sentence,origin}.m4a` plus a per-list `manifest.json` using `spellingbee.audio/1`, as required by the app loader. Each manifest gives all file paths, the total byte count, per-clip byte sizes, the voice, and a version based on voice, date, and a hash of every clip so it changes when the voice or any clip changes. The generator skips existing clips, so it can resume. Remove an individual clip before regenerating it.
 
 Word clips use the normal spelling at a slower speaking rate. **The word list's `audio.respell` is not automatically used.** Add a `<list-id>/<word-id>` key to `respell-overrides.json` only after listening confirms a model mispronunciation; its value must match that record's current `audio.respell`. Other clue clips read the first definition, sentence, and origin. All output is trimmed for leading/trailing silence, mono AAC at 40 kbps, and 24 kHz.
 
